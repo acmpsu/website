@@ -1,17 +1,10 @@
 import Image from "next/image";
 import Navigation from "./components/navigation";
 import Announcement from "./components/announcements";
-import { Card, CardContent } from "@/components/ui/card";
 import Footer from "./components/footer";
 import { HoverBorderGradient } from "./components/ui/hover-border-gradient";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import Carousel from "./components/carousel";
 import Sponsors from "./components/sponsors";
 import { BackgroundBeams } from "./components/ui/background-beams";
  
@@ -55,23 +48,7 @@ export default function Home() {
 
           {/* Right side carousel */}
           <div className="flex items-center justify-center h-[500px] w-full">
-            <Carousel className="w-full max-w-[800px]">
-              <CarouselContent className="h-[500px]">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <CarouselItem key={index} className="h-[500px]">
-                    <div className="relative w-full h-full">
-                      <img
-                        src={`/carousel-pictures/${index + 1}.jpg`}
-                        alt={`ACM Event ${index + 1}`}
-                        className="object-cover rounded-lg w-full h-full"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="hidden sm:flex" />
-              <CarouselNext className="hidden sm:flex" />
-            </Carousel>
+            <Carousel />
           </div>
         </div>
       </div>
