@@ -14,9 +14,12 @@ export default function CarouselComponent() {
                       className="object-cover rounded-lg w-full h-full"
                       width={800}
                       height={500}
+                      priority
+                        unoptimized
                     />
                   </div>
                 </CarouselItem>
+
                 <CarouselItem className="h-[500px]">
                   <div className="relative w-full h-full">
                     <Image
@@ -24,10 +27,13 @@ export default function CarouselComponent() {
                       alt="ACM Event 2"
                       className="object-cover rounded-lg w-full h-full"
                       width={800}
-                      height={500}
+                      height={500}  
+                      priority
+                        unoptimized
                     />
                   </div>
                 </CarouselItem>
+
                 <CarouselItem className="h-[500px]">
                   <div className="relative w-full h-full">
                     <Image
@@ -36,9 +42,12 @@ export default function CarouselComponent() {
                       className="object-cover rounded-lg w-full h-full"
                       width={800}
                       height={500}
+                      priority
+                        unoptimized
                     />
                   </div>
                 </CarouselItem>
+
                 <CarouselItem className="h-[500px]">
                   <div className="relative w-full h-full">
                     <Image
@@ -47,9 +56,12 @@ export default function CarouselComponent() {
                       className="object-cover rounded-lg w-full h-full"
                       width={800}
                       height={500}
+                      priority
+                        unoptimized
                     />
                   </div>
                 </CarouselItem>
+
                 <CarouselItem className="h-[500px]">
                   <div className="relative w-full h-full">
                     <Image
@@ -58,6 +70,8 @@ export default function CarouselComponent() {
                       className="object-cover rounded-lg w-full h-full"
                       width={800}
                       height={500}
+                      priority
+                        unoptimized
                     />
                   </div>
                 </CarouselItem>
