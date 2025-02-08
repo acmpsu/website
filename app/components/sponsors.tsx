@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function SponsorsPreview() {
   return (
-    <div className="w-full max-w-7xl mx-auto mt-20 px-4 sm:px-6 md:px-8 mb-20">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Some of Our Sponsors</h2>
+    <div className="w-full max-w-7xl mx-auto mt-20 px-4 sm:px-6 md:px-8 mb-[100px]">
+      <div className="text-center ">
+        <h2 className="text-md mb-1 text-gray-600">Penn State ACM is backed by the world's best companies.</h2>
         <a 
           href="/sponsors" 
-          className="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center"
+          className="text-gray-500 text-sm hover:text-blue-800 inline-flex items-center"
         >
           View all sponsors 
           <svg 
@@ -26,34 +26,41 @@ export default function SponsorsPreview() {
         </a>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+      <div className="grid grid-cols-2 md:grid-cols-5 items-center justify-items-center">
         <Image
-          src="/sponsor1.png"
+          src="/company-logos/capital-one.png"
           alt="Sponsor 1"
           width={150}
           height={80}
-          className="grayscale hover:grayscale-0 transition-all"
+          className="transition-all"
         />
         <Image
-          src="/sponsor2.png"
+          src="/company-logos/lockheed-martin.png"
           alt="Sponsor 2"
           width={150}
           height={80}
-          className="grayscale hover:grayscale-0 transition-all"
+          className="transition-all"
         />
         <Image
-          src="/sponsor3.png"
+          src="/company-logos/boeing.png"
           alt="Sponsor 3"
           width={150}
           height={80}
-          className="grayscale hover:grayscale-0 transition-all"
+          className="transition-all"
         />
         <Image
-          src="/sponsor4.png"
+          src="/company-logos/nittany-ai-advance.png"
           alt="Sponsor 4"
           width={150}
           height={80}
-          className="grayscale hover:grayscale-0 transition-all"
+          className="transition-all"
+        />
+        <Image
+          src="/company-logos/textron.png"
+          alt="Sponsor 5"
+          width={150}
+          height={80}
+          className="transition-all col-span-2 md:col-span-1"
         />
       </div>
     </div>
