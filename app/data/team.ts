@@ -106,6 +106,19 @@ export const executiveBoard: TeamMember[] = [
     }
   },
   {
+    name: "Matthew Gurer",
+    role: "Corporate Relations Director",
+    image: "/headshots/placeholder.png",
+    links: {
+      github: "https://github.com/johndoe",
+      linkedin: "https://linkedin.com/in/johndoe"
+    },
+    quote: {
+        text: 'Placeholder',
+        attribution: ""
+    }
+  },
+  {
     name: "Dennis Miczek",
     role: "Event Planner",
     image: "/headshots/placeholder.png",
@@ -203,6 +216,19 @@ export const captains: TeamMember[] = [
   {
     name: "Lorem Ipsum",
     role: "ML PSU Captain",
+    image: "/headshots/placeholder.png",
+    links: {
+      github: "https://github.com/johndoe",
+      linkedin: "https://linkedin.com/in/johndoe"
+    },
+    quote: {
+        text: 'Placeholder',
+        attribution: ""
+    }
+  },
+  {
+    name: "Adim Ogbolu",
+    role: "Corporate Relations Captain",
     image: "/headshots/placeholder.png",
     links: {
       github: "https://github.com/johndoe",

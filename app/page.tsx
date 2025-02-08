@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Sponsors from "./components/sponsors";
  
 
 export default function Home() {
@@ -18,8 +19,33 @@ export default function Home() {
       <Announcement />
       <Navigation />
 
-      <div className="flex justify-center w-full mt-10 px-4 sm:px-6 md:px-8">
-        <Carousel className="w-full max-w-7xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full mt-10 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
+        {/* Left side content */}
+        <div className="flex flex-col justify-center space-y-6">
+          <h1 className="text-4xl sm:text-5xl font-bold">
+            Welcome to Penn State ACM.
+          </h1>
+          <p className="text-lg text-gray-600">
+            Join us in our mission to foster growth, innovation, and community in computer science at Penn State.
+          </p>
+          <div className="flex gap-4">
+            <a 
+              href="/join" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Join Us
+            </a>
+            <a 
+              href="/events" 
+              className="border border-gray-300 hover:border-gray-400 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              View Events
+            </a>
+          </div>
+        </div>
+
+        {/* Right side carousel */}
+        <Carousel className="w-full">
           <CarouselContent>
             {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem key={index}>
@@ -37,7 +63,8 @@ export default function Home() {
           <CarouselNext className="hidden sm:flex" />
         </Carousel>
       </div>
-      
+      <Sponsors />
+
       <Footer />
     </div>
   );

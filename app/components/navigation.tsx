@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { HoverBorderGradient } from "@/app/components/ui/hover-border-gradient";
 
 import {
   NavigationMenu,
@@ -154,9 +155,13 @@ export default function Navigation() {
 
       {/* Desktop Join Button */}
       <div className="hidden md:block ml-12">
-        <Link href="/join">
-          <Button className="bg-blue-500 text-white hover:bg-blue-600">Join Us</Button>
-        </Link>
+        <HoverBorderGradient
+            containerClassName="rounded-full"
+            as="button"
+            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+        >
+            <span>Join Us</span>
+        </HoverBorderGradient>
       </div>
 
       {/* Mobile Navigation */}
