@@ -60,15 +60,10 @@ export default function Home() {
                 {Array.from({ length: 5 }).map((_, index) => (
                   <CarouselItem key={index} className="h-[500px]">
                     <div className="relative w-full h-full">
-                      <Image
+                      <img
                         src={`/carousel-pictures/${index + 1}.jpg`}
                         alt={`ACM Event ${index + 1}`}
-                        width={800}
-                        height={500}
                         className="object-cover rounded-lg w-full h-full"
-                        priority
-                        loading="eager"
-                        quality={100}
                       />
                     </div>
                   </CarouselItem>
