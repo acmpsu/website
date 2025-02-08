@@ -187,7 +187,7 @@ export const captains: TeamMember[] = [
     }
   },
   {
-    name: "Lorem Ipsum",
+    name: "Julian Mehta",
     role: "ML PSU Captain",
     image: "/headshots/placeholder.png",
     links: {
