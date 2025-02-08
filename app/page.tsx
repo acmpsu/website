@@ -63,10 +63,12 @@ export default function Home() {
                       <Image
                         src={`/carousel-pictures/${index + 1}.jpg`}
                         alt={`ACM Event ${index + 1}`}
-                        fill
-                        className="object-cover rounded-lg"
+                        width={1920}
+                        height={1080}
+                        className="object-cover rounded-lg w-full h-full"
                         priority={index === 0}
-                        sizes="(max-width: 800px) 100vw, 800px"
+                        quality={75}
+                        unoptimized
                       />
                     </div>
                   </CarouselItem>
