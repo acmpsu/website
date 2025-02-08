@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
 const carouselItems = Array.from({ length: 5 }, (_, i) => ({
-    src: `/carousel-pictures/${i + 1}.jpg?w=800&q=75`,
+    src: `/carousel-pictures/${i + 1}.jpg`,
     alt: `ACM Event ${i + 1}`
 }));
 
