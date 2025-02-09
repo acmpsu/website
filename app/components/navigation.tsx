@@ -133,11 +133,12 @@ export default function Navigation() {
                   <div className="grid grid-rows-2 h-full gap-3">
                     <ListItem 
                       className="hover:bg-gray-100 h-full" 
-                      href="/sponsors" 
-                      title="Our Sponsors"
+                      href="/relationships" 
+                      title="Our Relationships"
                     >
-                      View our current sponsors and learn about partnership opportunities.
+                      View our current relationships and learn about partnership opportunities.
                     </ListItem>
+
                     <ListItem 
                       className="hover:bg-gray-100 h-full" 
                       href="/contact" 
@@ -261,7 +262,7 @@ export default function Navigation() {
                     className="flex w-full justify-between items-center p-2 hover:bg-gray-100 rounded"
                     onClick={() => setIsSponsorsOpen(!isSponsorsOpen)}
                   >
-                    Sponsors & Contact
+                    Relationships & Contact
                     <svg
                       className={`w-4 h-4 transition-transform ${
                         isSponsorsOpen ? 'rotate-180' : ''
@@ -281,10 +282,10 @@ export default function Navigation() {
                   
                   {isSponsorsOpen && (
                     <div className="pl-4 space-y-2 mt-2">
-                      <Link href="/sponsors" className="block p-2 hover:bg-gray-100 rounded">
+                      <Link href="/relationships" className="block p-2 hover:bg-gray-100 rounded">
                         <div>
-                          <div className="font-bold">Our Sponsors</div>
-                          <div className="text-sm text-gray-500">View our current sponsors and partnership opportunities.</div>
+                          <div className="font-bold">Our Relationships</div>
+                          <div className="text-sm text-gray-500">View our current relationships and partnership opportunities.</div>
                         </div>
                       </Link>
                       <Link href="/contact" className="block p-2 hover:bg-gray-100 rounded">
