@@ -6,7 +6,39 @@ import { HoverBorderGradient } from "./components/ui/hover-border-gradient";
 import Carousel from "./components/carousel";
 import Sponsors from "./components/sponsors";
 import { BackgroundBeams } from "./components/ui/background-beams";
- 
+
+const sponsorImages = [
+  {
+    src: "/company-logos/capital-one.png",
+    alt: "Capital One Logo",
+    width: 200,
+    height: 100
+  },
+  {
+    src: "/company-logos/lockheed-martin.png",
+    alt: "Lockheed Martin Logo",
+    width: 200,
+    height: 100
+  },
+  {
+    src: "/company-logos/boeing.png",
+    alt: "Boeing Logo",
+    width: 200,
+    height: 100
+  },
+  {
+    src: "/company-logos/nittany-ai-advance.png",
+    alt: "Nittany AI Advance Logo",
+    width: 200,
+    height: 100
+  },
+  {
+    src: "/company-logos/textron.png",
+    alt: "Textron Logo",
+    width: 200,
+    height: 100
+  }
+];
 
 export default function Home() {
   return (
@@ -52,7 +84,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Sponsors />
+      <Sponsors sponsors={sponsorImages} mainTitle="Penn State ACM is backed by the world's best companies." linkText="View all sponsors" />
 
       <div className="bg-white py-16 font-roboto">
         <div className="max-w-3xl mx-auto">
