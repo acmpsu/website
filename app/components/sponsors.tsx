@@ -1,15 +1,30 @@
 import Image from "next/image";
 
-export default function SponsorsPreview() {
+interface SponsorImage {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
+export default function Sponsors({ 
+  sponsors = [], 
+  mainTitle = "Penn State ACM is backed by the world's best companies.",
+  linkText = "View all sponsors"
+}: { 
+  sponsors?: SponsorImage[];
+  mainTitle?: string;
+  linkText?: string;
+}) {
   return (
     <div className="w-full max-w-7xl mx-auto mt-20 px-4 sm:px-6 md:px-8 mb-[100px]">
-      <div className="text-center ">
-        <h2 className="text-md mb-1 text-gray-600">Penn State ACM is backed by the world's best companies.</h2>
+      <div className="text-center">
+        <h2 className="text-md mb-1 text-gray-600">{mainTitle}</h2>
         <a 
           href="/sponsors" 
           className="text-gray-500 text-sm hover:text-blue-800 inline-flex items-center"
         >
-          View all sponsors 
+          {linkText}
           <svg 
             className="w-4 h-4 ml-2" 
             fill="none" 
@@ -26,42 +41,23 @@ export default function SponsorsPreview() {
         </a>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 items-center justify-items-center">
-        <Image
-          src="/company-logos/capital-one.png"
-          alt="Sponsor 1"
-          width={150}
-          height={80}
-          className="transition-all"
-        />
-        <Image
-          src="/company-logos/lockheed-martin.png"
-          alt="Sponsor 2"
-          width={150}
-          height={80}
-          className="transition-all"
-        />
-        <Image
-          src="/company-logos/boeing.png"
-          alt="Sponsor 3"
-          width={150}
-          height={80}
-          className="transition-all"
-        />
-        <Image
-          src="/company-logos/nittany-ai-advance.png"
-          alt="Sponsor 4"
-          width={150}
-          height={80}
-          className="transition-all"
-        />
-        <Image
-          src="/company-logos/textron.png"
-          alt="Sponsor 5"
-          width={150}
-          height={80}
-          className="transition-all col-span-2 md:col-span-1"
-        />
+      <div className={`grid ${
+        sponsors.length >= 5 
+          ? 'grid-cols-2 md:grid-cols-5' 
+          : `grid-cols-2 md:grid-cols-${sponsors.length}`
+      } items-center justify-items-center gap-4 ${
+        sponsors.length < 5 ? 'md:place-content-center' : ''
+      }`}>
+        {sponsors.map((sponsor, index) => (
+          <Image
+            key={index}
+            src={sponsor.src}
+            alt={sponsor.alt}
+            width={sponsor.width || 150}
+            height={sponsor.height || 80}
+            className="transition-all"
+          />
+        ))}
       </div>
     </div>
   );
