@@ -3,6 +3,7 @@ import Footer from "@/app/components/footer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { CodeBlockWithCode } from "@/app/components/codeblock";
 
 export default function DevPSU() {
   return (
@@ -11,22 +12,31 @@ export default function DevPSU() {
       <div className="min-h-screen flex flex-col">
       <main className="flex-grow max-w-7xl mx-auto px-4 py-8">
         {/* Hero Section */}
-        <div className="text-center mb-12">
-            <Image 
-              src="/devpsu-logo.png"
-              alt="DevPSU Logo"
-              width={200}
-              height={200}
-              className="mx-auto mb-6"
-            />
-          <h1 className="text-4xl font-bold mb-4">Welcome to DEV PSU</h1>
-          <p className="text-xl text-gray-600 mb-6">
-            Learn, build, and grow with Penn State's premier software development community
-          </p>
-          <Button className="bg-blue-500 hover:bg-blue-600">
-            Join Our Discord
-          </Button>
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 mb-12">
+            <div>
+                <div className="flex items-center gap-6 mb-4">
+                    <Image 
+                      src="/devpsu-logo.png"
+                      alt="DevPSU Logo"
+                      width={120}
+                      height={120}
+                    />
+                    <h1 className="text-6xl font-bold">Data Engine</h1>
+                </div>
+                <p className="text-xl text-gray-600 mb-6">
+                    Collect, curate, and annotate data.<br/>
+                    Train models and evaluate. Repeat.
+                </p>
+                <Button className="bg-blue-500 hover:bg-blue-600 w-fit">
+                    View Schedule
+                </Button>
+            </div>
+
+            <div className="flex justify-center lg:justify-end items-center">
+                <CodeBlockWithCode />
+            </div>
         </div>
+
 
         {/* Main Content Sections */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -37,7 +47,7 @@ export default function DevPSU() {
               Regular technical presentations and hands-on workshops covering various development topics.
               From web development to system design, we've got you covered.
             </p>
-            <Link href="/devpsu/schedule">
+            <Link href="/schedule">
                 <Button variant="outline">View Schedule</Button>
             </Link>
           </div>

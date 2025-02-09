@@ -19,11 +19,11 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full mt-10 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto relative z-10 place-items-center">
           {/* Left side content */}
           <div className="flex flex-col font-roboto justify-center space-y-6 w-[400px] h-[500px]">
-            <div className="flex flex-col space-y-6">
+            <div className="flex flex-col space-y-6 mx-5">
               <h1 className="text-4xl text-[#004ab0] sm:text-5xl font-bold">
                 Welcome to Penn State ACM.
               </h1>
-              <p className="text-md text-[#004ab0]">
+              <p className="text-md text-[#004ab0] ">
                 Penn State ACM allows you to connect with other students who share your passion for technology through workshops, events, and collaborative projects.
               </p>
               <div className="flex gap-4">
