@@ -4,12 +4,12 @@ import Footer from "../../components/Footer";
 import TeamSection from "../../components/TeamSection";
 import { executiveBoard, captains } from "../../data/team";
 
-export default function MeetUs() {
+export default function AboutUs() {
   return (
     <div className="min-h-screen">
       <Navigation />
       <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-4">Meet Us</h1>
+        <h1 className="text-4xl font-bold text-center mb-4">About Us</h1>
         <div className="text-center mb-12">
           <h2 className="text-2xl font-semibold mb-4">ACM Student Chapter</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
