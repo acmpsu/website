@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/components/ui/button"
 import { cn } from "@/lib/utils"
 import { HoverBorderGradient } from "@/app/components/ui/hover-border-gradient";
 
@@ -15,7 +15,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/app/components/ui/navigation-menu"
 
 interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
   className?: string;
@@ -61,7 +61,7 @@ export default function Navigation() {
       {/* Desktop Navigation */}
       <div className="hidden font-roboto md:block flex-grow">
         <NavigationMenu>
-          <NavigationMenuList className="gap-6">
+          <NavigationMenuList className="gap-4">
             <NavigationMenuItem>
               <Link href="/whatwedo" legacyBehavior passHref>
                 <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-md`}>
@@ -83,17 +83,39 @@ export default function Navigation() {
                 Learning
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 bg-white p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
+                <ul className="grid gap-3 bg-white p-4 md:w-[400px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-2">
                     <NavigationMenuLink asChild>
                       <div
-                        className="flex bg-gray-100 h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                        className="flex bg-gray-100 h-full w-full select-none flex-col justify-center items-center text-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md hover:bg-gray-200 transition-colors cursor-pointer"
+                        onClick={() => window.location.href = '/schedule'}
                       >
-                        <div className="mb-2 mt-4 text-lg font-medium">
-                          Learning with PSU ACM
+                        <div className="flex items-center gap-2">
+                          <div className="text-lg font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+                            View Schedule 
+                          </div>
+                          <svg 
+                            className="w-5 h-5"
+                            fill="none" 
+                            viewBox="0 0 24 24"
+                          >
+                            <path 
+                              d="M9 5l7 7-7 7"
+                              strokeLinecap="round" 
+                              strokeLinejoin="round" 
+                              strokeWidth={2}
+                              className="stroke-[url(#gradient)]"
+                            />
+                            <defs>
+                              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stopColor="#2563eb" /> {/* blue-600 */}
+                                <stop offset="100%" stopColor="#9333ea" /> {/* purple-600 */}
+                              </linearGradient>
+                            </defs>
+                          </svg>
                         </div>
                         <p className="text-sm leading-tight text-muted-foreground">
-                          Be a part of PSU ACM and learn new skills using our presentations and workshops.
+                          Check out our upcoming workshops, presentations, and learning opportunities.
                         </p>
                       </div>
                     </NavigationMenuLink>
@@ -119,18 +141,18 @@ export default function Navigation() {
                   <li className="row-span-2">
                     <NavigationMenuLink asChild>
                       <div
-                        className="flex bg-gray-100 h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                        className="flex bg-gray-100 h-full w-full select-none flex-col justify-center items-center text-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                       >
-                        <div className="mb-2 mt-4 text-lg font-medium">
+                        <div className="mb-2 text-lg font-medium bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
                           Partner with PSU ACM
                         </div>
                         <p className="text-sm leading-tight text-muted-foreground">
-                          Connect with talented students and support technology education at Portland State University.
+                          Connect with talented students and support technology education at Penn State University.
                         </p>
                       </div>
                     </NavigationMenuLink>
                   </li>
-                  <div className="grid grid-rows-2 h-full gap-3">
+                  <div className="grid grid-rows-3 h-full gap-3">
                     <ListItem 
                       className="hover:bg-gray-100 h-full" 
                       href="/sponsors" 
@@ -138,6 +160,15 @@ export default function Navigation() {
                     >
                       View our current sponsors and learn about partnership opportunities.
                     </ListItem>
+
+                    <ListItem 
+                      className="hover:bg-gray-100 h-full" 
+                      href="/friends" 
+                      title="Our Friends"
+                    >
+                      View our club friends and learn about our events with them.
+                    </ListItem>
+
                     <ListItem 
                       className="hover:bg-gray-100 h-full" 
                       href="/contact" 
@@ -155,13 +186,15 @@ export default function Navigation() {
 
       {/* Desktop Join Button */}
       <div className="hidden md:block ml-12">
-        <HoverBorderGradient
-            containerClassName="rounded-full"
-            as="button"
-            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+        <Link href="/join">
+          <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
         >
             <span>Join Us</span>
         </HoverBorderGradient>
+        </Link>
       </div>
 
       {/* Mobile Navigation */}
@@ -233,6 +266,24 @@ export default function Navigation() {
                   
                   {isLearningOpen && (
                     <div className="pl-4 space-y-2 mt-2">
+                      <Link href="/schedule" className="block p-2 hover:bg-gray-100 rounded">
+                        <div className="flex items-center justify-between">
+                          <span className="font-bold">View Schedule</span>
+                          <svg 
+                            className="w-4 h-4 text-gray-500"
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                          >
+                            <path 
+                              strokeLinecap="round" 
+                              strokeLinejoin="round" 
+                              strokeWidth={2} 
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </div>
+                      </Link>
                       <Link href="/devpsu" className="block p-2 hover:bg-gray-100 rounded">
                         <div className="flex items-center gap-2">
                           <Image src="/devpsu-logo.png" alt="DEV PSU" width={40} height={40} />
@@ -261,7 +312,7 @@ export default function Navigation() {
                     className="flex w-full justify-between items-center p-2 hover:bg-gray-100 rounded"
                     onClick={() => setIsSponsorsOpen(!isSponsorsOpen)}
                   >
-                    Sponsors & Contact
+                    Relations & Contact
                     <svg
                       className={`w-4 h-4 transition-transform ${
                         isSponsorsOpen ? 'rotate-180' : ''
@@ -281,12 +332,19 @@ export default function Navigation() {
                   
                   {isSponsorsOpen && (
                     <div className="pl-4 space-y-2 mt-2">
-                      <Link href="/sponsors" className="block p-2 hover:bg-gray-100 rounded">
+                        <Link href="/sponsors" className="block p-2 hover:bg-gray-100 rounded">
                         <div>
                           <div className="font-bold">Our Sponsors</div>
-                          <div className="text-sm text-gray-500">View our current sponsors and partnership opportunities.</div>
+                          <div className="text-sm text-gray-500">View our current sponsors and learn about partnership opportunities.</div>
                         </div>
                       </Link>
+                      <Link href="/friends" className="block p-2 hover:bg-gray-100 rounded">
+                        <div>
+                          <div className="font-bold">Our Friends</div>
+                          <div className="text-sm text-gray-500">View our club friends.</div>
+                        </div>
+                      </Link>
+                      
                       <Link href="/contact" className="block p-2 hover:bg-gray-100 rounded">
                         <div>
                           <div className="font-bold">Contact Us</div>
