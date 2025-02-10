@@ -1,5 +1,5 @@
 import Navigation from "./components/Navigation";
-import Announcement from "./components/announcements";
+import Announcement from "./components/Announcements";
 import Footer from "./components/Footer";
 import { HoverBorderGradient } from "./components/ui/hover-border-gradient";
 
@@ -66,7 +66,7 @@ export default function Home() {
                 >
                     <span>Join Us</span>
                 </HoverBorderGradient></a>
-                <a href="/join"><HoverBorderGradient
+                <a href="/schedule"><HoverBorderGradient
                     containerClassName="rounded-full"
                     as="button"
                     className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"

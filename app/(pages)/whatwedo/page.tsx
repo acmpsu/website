@@ -110,10 +110,13 @@ export default function Activities() {
               Join our community to stay updated on upcoming events and connect with 
               fellow tech enthusiasts!
             </p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Join Our Community
-            </button>
+            <a href="/join">
+              <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Join Our Community
+              </button>
+            </a>
           </div>
+
         </main>
         <Footer />
       </div>
