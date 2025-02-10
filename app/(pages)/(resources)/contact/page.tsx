@@ -10,22 +10,17 @@ export default function Contact() {
         
         <div className="space-y-6 text-center">
           <div>
-            <h2 className="text-2xl font-semibold mb-2">General Inquiries</h2>
-            <p className="text-lg">acm@psu.edu</p>
+            <h2 className="text-2xl font-semibold mb-2">Exexctive Board</h2>
+            <p className="text-lg">President: president@acm.psu.edu</p>
+            <p className="text-lg">Vice President: vicepresident@acm.psu.edu</p>
+            <p className="text-lg">Secretary: secretary@acm.psu.edu</p>
+            <p className="text-lg">Treasurer: treasurer@acm.psu.edu</p>
+            <p className="text-lg">Webmaster: webmaster@acm.psu.edu</p>
+            <p className="text-lg">Corporate Relations: corporate@acm.psu.edu</p>
           </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold mb-2">Officers</h2>
-            <p className="text-lg">President: president@acmpsu.org</p>
-            <p className="text-lg">Vice President: vp@acmpsu.org</p>
-          </div>
-
-        <div>
-            <h2 className="text-2xl font-semibold mb-2">Corporate</h2>
-            <p className="text-lg">Corporate Relations: blahblah@blah.org </p>
-        </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
