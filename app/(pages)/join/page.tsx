@@ -5,7 +5,9 @@ export default function Join() {
   return (
     <div>
       <Navigation />
-      <h1>Join</h1>
+      <div className="flex flex-col items-center justify-center h-screen">
+        <h1 className="text-4xl font-bold">Join ACM PSU</h1>
+      </div>
       <Footer />
     </div>
 

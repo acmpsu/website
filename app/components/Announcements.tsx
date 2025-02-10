@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Announcement() {
     return (
         <Link 
-            href="https://discord.gg/your-discord-link" 
+            href="https://discord.gg/kESvzTwbcc" 
             className="bg-black text-white px-4 py-1.5 text-sm text-center block transition-all duration-300"
         >
             <span className="flex items-center justify-center gap-2 font-medium">

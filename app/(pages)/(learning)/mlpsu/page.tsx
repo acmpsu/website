@@ -156,7 +156,7 @@ export default function DevPSU() {
                   something in mind, let us know!
                 </p>
                 <Link 
-                  href="https://forms.gle/your-form-link" 
+                  href="https://forms.office.com/r/PxnNbGimHn" 
                   target="_blank"
                   className="inline-block"
                 >
@@ -174,7 +174,7 @@ export default function DevPSU() {
                 </p>
                 <Link href="/join" className="inline-block">
                   <Button className="bg-green-500 hover:bg-green-600">
-                    Join DEV PSU
+                    Join ML PSU
                   </Button>
                 </Link>
               </div>
