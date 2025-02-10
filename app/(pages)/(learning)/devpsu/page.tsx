@@ -49,7 +49,7 @@ export default function DevPSU() {
             </div>
 
             <div className="flex justify-center lg:justify-end items-center">
-                <CodeBlockWithCode />
+                <CodeBlockWithCode page="devpsu" />
             </div>
           </div>
 

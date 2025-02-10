@@ -88,11 +88,11 @@ export default function Navigation() {
                     <NavigationMenuLink asChild>
                       <div
                         className="flex bg-gray-100 h-full w-full select-none flex-col justify-center items-center text-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md hover:bg-gray-200 transition-colors cursor-pointer"
-                        onClick={() => window.location.href = '/events'}
+                        onClick={() => window.location.href = '/schedule'}
                       >
                         <div className="flex items-center gap-2">
                           <div className="text-lg font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-                            View All Events
+                            View Schedule 
                           </div>
                           <svg 
                             className="w-5 h-5"
@@ -143,7 +143,7 @@ export default function Navigation() {
                       <div
                         className="flex bg-gray-100 h-full w-full select-none flex-col justify-center items-center text-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                       >
-                        <div className="mb-2 text-lg font-medium">
+                        <div className="mb-2 text-lg font-medium bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
                           Partner with PSU ACM
                         </div>
                         <p className="text-sm leading-tight text-muted-foreground">
@@ -266,9 +266,9 @@ export default function Navigation() {
                   
                   {isLearningOpen && (
                     <div className="pl-4 space-y-2 mt-2">
-                      <Link href="/events" className="block p-2 hover:bg-gray-100 rounded">
+                      <Link href="/schedule" className="block p-2 hover:bg-gray-100 rounded">
                         <div className="flex items-center justify-between">
-                          <span className="font-bold">All Events</span>
+                          <span className="font-bold">View Schedule</span>
                           <svg 
                             className="w-4 h-4 text-gray-500"
                             fill="none" 
