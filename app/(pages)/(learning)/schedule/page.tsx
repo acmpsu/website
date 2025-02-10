@@ -1,5 +1,5 @@
-import Navigation from "@/app/components/navigation";
-import Footer from "@/app/components/footer";
+import Navigation from "@/app/components/Navigation";
+import Footer from "@/app/components/Footer";
 
 export default function DEVPSUSchedule() {
   return (

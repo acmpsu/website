@@ -1,10 +1,10 @@
-import Navigation from "./components/navigation";
-import Announcement from "./components/announcements";
-import Footer from "./components/footer";
+import Navigation from "./components/Navigation";
+import Announcement from "./components/Announcements";
+import Footer from "./components/Footer";
 import { HoverBorderGradient } from "./components/ui/hover-border-gradient";
 
-import Carousel from "./components/carousel";
-import Sponsors from "./components/sponsors";
+import Carousel from "./components/Carousel";
+import Sponsors from "./components/Sponsors";
 import { BackgroundBeams } from "./components/ui/background-beams";
 
 const sponsorImages = [
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Sponsors sponsors={sponsorImages} mainTitle="Penn State ACM is backed by the world's best companies." linkText="View all sponsors" />
+      <Sponsors sponsors={sponsorImages} linkPath="/sponsors" mainTitle="Penn State ACM is backed by the world's best companies." linkText="View all sponsors" />
 
       <div className="bg-white py-16 font-roboto">
         <div className="max-w-3xl mx-auto">

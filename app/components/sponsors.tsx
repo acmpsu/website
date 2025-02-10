@@ -10,18 +10,20 @@ interface SponsorImage {
 export default function Sponsors({ 
   sponsors = [], 
   mainTitle = "Penn State ACM is backed by the world's best companies.",
-  linkText = "View all sponsors"
+  linkText = "View all sponsors",
+  linkPath = "/sponsors"
 }: { 
   sponsors?: SponsorImage[];
   mainTitle?: string;
   linkText?: string;
+  linkPath?: string;
 }) {
   return (
     <div className="w-full max-w-7xl mx-auto mt-20 px-4 sm:px-6 md:px-8 mb-[100px]">
       <div className="text-center">
         <h2 className="text-md mb-1 text-gray-600">{mainTitle}</h2>
         <a 
-          href="/sponsors" 
+          href={linkPath}
           className="text-gray-500 text-sm hover:text-blue-800 inline-flex items-center"
         >
           {linkText}

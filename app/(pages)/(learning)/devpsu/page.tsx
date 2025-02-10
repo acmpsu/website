@@ -1,20 +1,20 @@
-import Navigation from "@/app/components/navigation";
-import Footer from "@/app/components/footer";
+import Navigation from "@/app/components/Navigation";
+import Footer from "@/app/components/Footer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { CodeBlockWithCode } from "@/app/components/codeblock";
-import Sponsors from "@/app/components/sponsors";
+import { CodeBlockWithCode } from "@/app/components/Codeblock";
+import Sponsors from "@/app/components/Sponsors";
 
 const sponsorImages = [
     {
-      src: "/company-logos/hackpsu.png",
+      src: "/club-logos/hackpsu.png",
       alt: "HackPSU Logo",
       width: 150,
       height: 100,
     },
     {
-      src: "/company-logos/ieee.png",
+      src: "/club-logos/ieee.png",
       alt: "IEEE Logo",
       width: 150,
       height: 100,
@@ -53,7 +53,7 @@ export default function DevPSU() {
             </div>
           </div>
 
-          <Sponsors sponsors={sponsorImages} mainTitle="Penn State ACM is working with leading tech clubs." linkText="View our relationships" />
+          <Sponsors sponsors={sponsorImages} linkPath="/friends" mainTitle="Penn State ACM is working with leading tech clubs." linkText="View our relationships" />
 
           {/* What We Do Section */}
 
