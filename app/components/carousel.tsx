@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/app/components/ui/carousel";
 
 const carouselItems = Array.from({ length: 5 }, (_, i) => ({
     src: `/carousel-pictures/${i + 1}.jpg`,

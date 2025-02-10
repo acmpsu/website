@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/components/ui/button"
 import { cn } from "@/lib/utils"
 import { HoverBorderGradient } from "@/app/components/ui/hover-border-gradient";
 
@@ -15,7 +15,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/app/components/ui/navigation-menu"
 
 interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
   className?: string;

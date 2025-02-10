@@ -1,5 +1,5 @@
 import Navigation from "./components/Navigation";
-import Announcement from "./components/Announcements";
+import Announcement from "./components/announcements";
 import Footer from "./components/Footer";
 import { HoverBorderGradient } from "./components/ui/hover-border-gradient";
 
