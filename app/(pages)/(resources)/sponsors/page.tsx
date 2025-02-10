@@ -12,7 +12,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-  } from "@/components/ui/accordion"
+  } from "@/app/components/ui/accordion"
 
 export default function Sponsors() {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);

@@ -1,0 +1,13 @@
+{
+    "events": [
+      {
+        "event": "Workshop",
+        "location": "Westgate E201",
+        "date": "2024-02-11",
+        "time": "6:00 PM",
+        "title": "Intro to the Unity Game Engine",
+        "presenter": "Wyatt Petula",
+        "link": "f"
+      }
+    ]
+  }

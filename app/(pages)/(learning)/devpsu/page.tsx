@@ -1,6 +1,6 @@
 import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { CodeBlockWithCode } from "@/app/components/Codeblock";
@@ -49,7 +49,7 @@ export default function DevPSU() {
             </div>
 
             <div className="flex justify-center lg:justify-end items-center">
-                <CodeBlockWithCode />
+                <CodeBlockWithCode page="devpsu" />
             </div>
           </div>
 
