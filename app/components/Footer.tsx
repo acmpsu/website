@@ -7,7 +7,7 @@ import 'react-social-icons/discord'
 export default function Footer() {
   return (
     <footer className="border-t mt-12">
-      <div className="mx-auto max-w-7xl px-6 py-12">
+      <div className="mx-auto w-3/4 py-12">
         <div className="flex flex-col md:flex-row items-start gap-8">
           {/* Logo */}
           <div className="md:w-1/4">

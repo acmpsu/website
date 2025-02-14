@@ -21,10 +21,10 @@ export default function Sponsors({
   return (
     <div className="w-full max-w-7xl mx-auto mt-20 px-4 sm:px-6 md:px-8 mb-[100px]">
       <div className="text-center">
-        <h2 className="text-md mb-1 text-gray-600">{mainTitle}</h2>
+        <h2 className="text-[20px] mb-1 font-geistSans text-black">{mainTitle}</h2>
         <a 
           href={linkPath}
-          className="text-gray-500 text-sm hover:text-blue-800 inline-flex items-center"
+          className="text-[#575757] text-sm hover:text-blue-800 inline-flex items-center"
         >
           {linkText}
           <svg 

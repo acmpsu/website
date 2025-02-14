@@ -38,7 +38,10 @@ const config = {
   		fontFamily: {
   			roboto: [
   				'var(--font-roboto)'
-  			]
+  			],
+			geistSans: [
+				'var(--font-geist-sans)'
+			]
   		},
   		keyframes: {
   			'accordion-down': {

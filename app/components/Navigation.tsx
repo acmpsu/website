@@ -53,7 +53,7 @@ export default function Navigation() {
   }, [lastScrollY, isMenuOpen])
 
   return (
-    <div className="max-w-7xl mt-4 px-4 flex items-center mx-auto justify-between relative z-50">
+    <div className="max-w-7xl px-4 flex items-center mx-auto justify-between relative z-50">
       <a href="/" className="mr-12">
         <Image src="/acm-logo.png" alt="ACM Logo" width={70} height={70} />
       </a>
