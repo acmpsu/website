@@ -21,7 +21,7 @@ const sponsorImages = [
     }
   ];
 
-export default function DevPSU() {
+export default function ACMWeb() {
   return (
     <div>
       <Navigation />
@@ -32,16 +32,16 @@ export default function DevPSU() {
             <div>
                 <div className="flex items-center gap-6 mb-4">
                     <Image 
-                      src="/devpsu-logo.png"
-                      alt="DevPSU Logo"
+                      src="/mlpsu-logo.png"
+                      alt="MLPSU Logo"
                       width={120}
                       height={120}
                     />
-                    <h1 className="text-6xl font-bold">DEV PSU</h1>
+                    <h1 className="text-6xl font-bold">ML PSU</h1>
                 </div>
                 <p className="text-xl text-gray-600 mb-6">
-                    Learn how to code, build your own projects, <br />
-                    and meet new people.
+                    Learn AI/ML fundamentals, build models, <br />
+                    and solve real-world problems.
                 </p>
                 <Button className="bg-blue-500 hover:bg-blue-600 w-fit">
                     View Schedule
@@ -49,7 +49,7 @@ export default function DevPSU() {
             </div>
 
             <div className="flex justify-center lg:justify-end items-center">
-                <CodeBlockWithCode page="devpsu" />
+                <CodeBlockWithCode page="mlpsu" />
             </div>
           </div>
 
@@ -174,7 +174,7 @@ export default function DevPSU() {
                 </p>
                 <Link href="/join" className="inline-block">
                   <Button className="bg-green-500 hover:bg-green-600">
-                    Join DEV PSU
+                    Join ML PSU
                   </Button>
                 </Link>
               </div>

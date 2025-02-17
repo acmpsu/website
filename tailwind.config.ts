@@ -41,6 +41,9 @@ const config = {
   			],
 			geistSans: [
 				'var(--font-geist-sans)'
+			],
+			poppins: [
+				'var(--font-poppins)'
 			]
   		},
   		keyframes: {

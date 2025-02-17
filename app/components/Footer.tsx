@@ -7,15 +7,15 @@ import 'react-social-icons/discord'
 export default function Footer() {
   return (
     <footer className="border-t mt-12">
-      <div className="mx-auto w-3/4 py-12">
+      <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="flex flex-col md:flex-row items-start gap-8">
           {/* Logo */}
           <div className="md:w-1/4">
             <Link href="/" className="inline-block">
               <Image 
-                src="/acm-logo-words.png" 
+                src="/acm-logo.svg" 
                 alt="ACM Logo" 
-                width={200} 
+                width={50} 
                 height={50} 
               />
             </Link>
@@ -42,28 +42,33 @@ export default function Footer() {
                     Join Us
                   </Link>
                 </li>
+                <li>
+                  <Link href="/events" className="text-sm text-gray-500 hover:text-gray-900">
+                    Events
+                  </Link>
+                </li>
               </ul>
             </div>
 
-            {/* Learning Column */}
+            {/* Committees Column */}
             <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-1">Learning</h3>
+              <h3 className="text-sm font-semibold text-gray-900 mb-1">Committees</h3>
               <ul>
                 <li>
                   <Link href="/devpsu" className="text-sm text-gray-500 hover:text-gray-900">
-                    DEV PSU
+                    acm.explore
                   </Link>
                 </li>
                 <li>
                   <Link href="/mlpsu" className="text-sm text-gray-500 hover:text-gray-900">
-                    ML PSU
+                    acm.ai
                   </Link>
                 </li>
                 <li>
-                  <Link href="/schedule" className="text-sm text-gray-500 hover:text-gray-900">
-                    Schedule
+                  <Link href="/mlpsu" className="text-sm text-gray-500 hover:text-gray-900">
+                    acm.web
                   </Link>
-                </li>
+                </li>      
               </ul>
             </div>
 
