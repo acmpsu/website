@@ -55,11 +55,11 @@ export const executiveBoard: TeamMember[] = [
   },
   {
     name: "David Youm",
-    role: "Webmaster",
-    image: "/headshots/placeholder.png",
+    role: "Software Engineer",
+    image: "/headshots/davidyoum.jpg",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      github: "https://github.com/davidyoum",
+      linkedin: "https://linkedin.com/in/davidyoum"
     },
     quote: {
         text: '"I Built This Website"',

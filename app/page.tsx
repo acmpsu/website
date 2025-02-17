@@ -106,47 +106,72 @@ export default function Home() {
       />
 
       {/* Impact Section */}
-      <div className="w-full bg-[#004ab0] relative overflow-hidden">
+      <div className="w-full bg-[#1e407c] relative overflow-hidden">
         {/* Background Hexagons */}
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-20">
-          <img 
-            src="/hexagon.svg" 
-            alt="" 
+          <svg
+            width="600"
+            height="600"
+            viewBox="0 0 1562.98 1749.08"
             className="w-[600px] h-[600px]"
-            aria-hidden="true"
-          />
+          >
+            <path 
+              fill="#1e40af"
+              d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"
+            />
+          </svg>
         </div>
         <div className="absolute -left-32 top-0 opacity-10">
-          <img 
-            src="/hexagon.svg" 
-            alt="" 
+          <svg
+            width="400"
+            height="400"
+            viewBox="0 0 1562.98 1749.08"
             className="w-[400px] h-[400px]"
-            aria-hidden="true"
-          />
+          >
+            <path 
+              fill="#1e40af"
+              d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"
+            />
+          </svg>
         </div>
         <div className="absolute right-32 -bottom-32 opacity-10">
-          <img 
-            src="/hexagon.svg" 
-            alt="" 
+          <svg
+            width="300"
+            height="300"
+            viewBox="0 0 1562.98 1749.08"
             className="w-[300px] h-[300px]"
-            aria-hidden="true"
-          />
+          >
+            <path 
+              fill="#1e40af"
+              d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"
+            />
+          </svg>
         </div>
         <div className="absolute left-1/2 top-0 opacity-10 transform -translate-x-1/2">
-          <img 
-            src="/hexagon.svg" 
-            alt="" 
+          <svg
+            width="200"
+            height="200"
+            viewBox="0 0 1562.98 1749.08"
             className="w-[200px] h-[200px]"
-            aria-hidden="true"
-          />
+          >
+            <path 
+              fill="#1e40af"
+              d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"
+            />
+          </svg>
         </div>
         <div className="absolute -left-16 bottom-0 opacity-10 transform rotate-45">
-          <img 
-            src="/hexagon.svg" 
-            alt="" 
+          <svg
+            width="250"
+            height="250"
+            viewBox="0 0 1562.98 1749.08"
             className="w-[250px] h-[250px]"
-            aria-hidden="true"
-          />
+          >
+            <path 
+              fill="#1e40af"
+              d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"
+            />
+          </svg>
         </div>
         
         <div className="py-16 font-roboto mx-4 sm:mx-6 md:mx-8 rounded-lg relative z-10">
@@ -212,6 +237,66 @@ export default function Home() {
               Stay connected with the latest in computer science.
             </p>
           </div>
+
+          {/* Event Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {/* Event Card 1 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-40 bg-[#004ab0] relative">
+                <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm text-[#004ab0] font-medium">
+                  Apr 15
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg mb-2">Tech Talk: AI Ethics</h3>
+                <p className="text-gray-600 text-sm mb-3">Join us for an engaging discussion on the ethical implications of AI development.</p>
+                <div className="flex items-center text-sm text-gray-500">
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  6:00 PM - 7:30 PM
+                </div>
+              </div>
+            </div>
+
+            {/* Event Card 2 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-40 bg-[#004ab0] relative">
+                <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm text-[#004ab0] font-medium">
+                  Apr 20
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg mb-2">Web Dev Workshop</h3>
+                <p className="text-gray-600 text-sm mb-3">Learn modern web development practices with React and Next.js.</p>
+                <div className="flex items-center text-sm text-gray-500">
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  5:00 PM - 7:00 PM
+                </div>
+              </div>
+            </div>
+
+            {/* Event Card 3 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-40 bg-[#004ab0] relative">
+                <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm text-[#004ab0] font-medium">
+                  Apr 25
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg mb-2">Hackathon Prep</h3>
+                <p className="text-gray-600 text-sm mb-3">Get ready for our upcoming hackathon with tips and team formation.</p>
+                <div className="flex items-center text-sm text-gray-500">
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  4:00 PM - 5:30 PM
+                </div>
+              </div>
+            </div>
+          </div>
           
           {/* View All Events Button */}
           <div className="flex justify-center">
@@ -228,7 +313,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full bg-gray-100 py-16 mb-20">
+      <div className="w-full px-9 py-16 mb-20">
       <div className="max-w-6xl mx-auto">
         {/* Hackathons Section */}
         <div className="flex flex-col md:flex-row items-center gap-8">
@@ -323,7 +408,7 @@ export default function Home() {
       </div>      
 
       {/* Final CTA Section */}
-      <div className="max-w-6xl mx-auto border shadow-md py-16 rounded-lg px-4 sm:px-6 md:px-8">
+      <div className="max-w-6xl mx-auto py-16 rounded-lg mb-20 px-4 sm:px-6 md:px-8">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h2 className="text-3xl font-medium text-black mb-4">
             Ready to start your journey?
@@ -340,6 +425,50 @@ export default function Home() {
               </HoverBorderGradient>
             </a>
           </div>
+        </div>
+      </div>
+
+      {/* Hexagon Border Pattern */}
+      <div className="relative w-full h-[80px] overflow-hidden bg-white">
+        <div className="absolute w-full" style={{ transform: 'translateX(-30px) translateY(10px)' }}>
+          {[...Array(2)].map((_, row) => {
+            const hexSize = 60;
+            const verticalGap = 8;
+            const numberOfHexagons = Math.ceil((typeof window !== 'undefined' ? window.innerWidth : 1920) / hexSize) + 2;
+
+            return (
+              <div 
+                key={row}
+                className="flex"
+                style={{
+                  transform: row % 2 ? 'translateX(30px)' : 'none',
+                  marginTop: row ? `-${(hexSize/3) - verticalGap}px` : '0',
+                  width: '100vw',
+                }}
+              >
+                {[...Array(numberOfHexagons)].map((_, col) => (
+                  <div 
+                    key={`${row}-${col}`}
+                    style={{ 
+                      width: hexSize,
+                      height: hexSize,
+                      flexShrink: 0
+                    }}
+                  >
+                    <svg
+                      viewBox="0 0 1562.98 1749.08"
+                      className="w-full h-full"
+                    >
+                      <path 
+                        fill="#1e407c"
+                        d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"
+                      />
+                    </svg>
+                  </div>
+                ))}
+              </div>
+            );
+          })}
         </div>
       </div>
 

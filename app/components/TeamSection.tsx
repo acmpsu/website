@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { TeamMember } from "../types/team";
+import { Badge } from "@/components/ui/badge";
 
 interface TeamSectionProps {
   title: string;
@@ -26,7 +27,7 @@ export default function TeamSection({ title, members }: TeamSectionProps) {
         {members.map((member, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md p-4 flex space-x-6"
+            className="bg-white rounded-lg p-4 flex space-x-6"
           >
             {/* Left Column: Image and Socials */}
             <div className="flex flex-col items-center w-32 flex-shrink-0">
@@ -81,7 +82,9 @@ export default function TeamSection({ title, members }: TeamSectionProps) {
             {/* Right Column: Name, Position, and Quote */}
             <div className="flex flex-col">
               <h3 className="text-lg font-semibold">{member.name}</h3>
-              <p className="text-gray-500 text-sm">{member.role}</p>
+              <div className="inline-block">
+                <Badge variant="outline">{member.role}</Badge>
+              </div>
               {renderQuote(member.quote)}
             </div>
           </div>

@@ -6,7 +6,7 @@ import 'react-social-icons/discord'
 
 export default function Footer() {
   return (
-    <footer className="border-t mt-12">
+    <footer className="border-t">
       <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="flex flex-col md:flex-row items-start gap-8">
           {/* Logo */}
@@ -79,6 +79,11 @@ export default function Footer() {
                 <li>
                   <Link href="/sponsors" className="text-sm text-gray-500 hover:text-gray-900">
                     Our Sponsors
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/friends" className="text-sm text-gray-500 hover:text-gray-900">
+                    Our Friends
                   </Link>
                 </li>
                 <li>
