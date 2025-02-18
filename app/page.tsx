@@ -8,7 +8,7 @@ import AnimatedStat from './components/AnimatedStat';
 import Sponsors from "./components/Sponsors";
 import ResponsiveHexagon from "./components/ResponsiveHexagons";
 import Image from 'next/image';
-
+import { EventCards } from "./components/EventCards";
 const sponsorImages = [
   {
     src: "/company-logos/capital-one.png",
@@ -226,7 +226,7 @@ export default function Home() {
       </div>
 
       <div className="py-16 font-roboto mx-4 sm:mx-6 md:mx-0 rounded-lg my-16">
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="text-center">
             <h2 className="text-4xl font-bold text-[#004ab0] mb-4">
               Upcoming Events
@@ -238,64 +238,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Event Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {/* Event Card 1 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-40 bg-[#004ab0] relative">
-                <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm text-[#004ab0] font-medium">
-                  Apr 15
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-bold text-lg mb-2">Tech Talk: AI Ethics</h3>
-                <p className="text-gray-600 text-sm mb-3">Join us for an engaging discussion on the ethical implications of AI development.</p>
-                <div className="flex items-center text-sm text-gray-500">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  6:00 PM - 7:30 PM
-                </div>
-              </div>
-            </div>
-
-            {/* Event Card 2 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-40 bg-[#004ab0] relative">
-                <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm text-[#004ab0] font-medium">
-                  Apr 20
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-bold text-lg mb-2">Web Dev Workshop</h3>
-                <p className="text-gray-600 text-sm mb-3">Learn modern web development practices with React and Next.js.</p>
-                <div className="flex items-center text-sm text-gray-500">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  5:00 PM - 7:00 PM
-                </div>
-              </div>
-            </div>
-
-            {/* Event Card 3 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-40 bg-[#004ab0] relative">
-                <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm text-[#004ab0] font-medium">
-                  Apr 25
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-bold text-lg mb-2">Hackathon Prep</h3>
-                <p className="text-gray-600 text-sm mb-3">Get ready for our upcoming hackathon with tips and team formation.</p>
-                <div className="flex items-center text-sm text-gray-500">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  4:00 PM - 5:30 PM
-                </div>
-              </div>
-            </div>
+          <div className="gap-5 mb-10">
+            <EventCards maxCards={3} textColor="text-black"/>
           </div>
           
           {/* View All Events Button */}
@@ -434,7 +378,9 @@ export default function Home() {
           {[...Array(2)].map((_, row) => {
             const hexSize = 60;
             const verticalGap = 8;
-            const numberOfHexagons = Math.ceil((typeof window !== 'undefined' ? window.innerWidth : 1920) / hexSize) + 2;
+            const numberOfHexagons = Math.ceil((typeof window !== 'undefined' ? window.innerWidth : 1920) / hexSize) + 4;
+            
+            const blueShades = ['#1e3a8a', '#2563eb', '#3b82f6', '#60a5fa'];
 
             return (
               <div 
@@ -446,26 +392,31 @@ export default function Home() {
                   width: '100vw',
                 }}
               >
-                {[...Array(numberOfHexagons)].map((_, col) => (
-                  <div 
-                    key={`${row}-${col}`}
-                    style={{ 
-                      width: hexSize,
-                      height: hexSize,
-                      flexShrink: 0
-                    }}
-                  >
-                    <svg
-                      viewBox="0 0 1562.98 1749.08"
-                      className="w-full h-full"
+                {[...Array(numberOfHexagons)].map((_, col) => {
+                  const randomShade = blueShades[Math.floor(Math.random() * blueShades.length)];
+                  
+                  return (
+                    <div 
+                      key={`${row}-${col}`}
+                      style={{ 
+                        width: hexSize,
+                        height: hexSize,
+                        flexShrink: 0,
+                        opacity: Math.random() < 0.1 ? '0' : '1'
+                      }}
                     >
-                      <path 
-                        fill="#1e407c"
-                        d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"
-                      />
-                    </svg>
-                  </div>
-                ))}
+                      <svg
+                        viewBox="0 0 1562.98 1749.08"
+                        className="w-full h-full"
+                      >
+                        <path 
+                          fill={randomShade}
+                          d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"
+                        />
+                      </svg>
+                    </div>
+                  );
+                })}
               </div>
             );
           })}

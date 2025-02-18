@@ -17,11 +17,12 @@ import {
   navigationMenuTriggerStyle,
 } from "@/app/components/ui/navigation-menu"
 
-interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
+interface ListItemProps extends Omit<React.ComponentPropsWithoutRef<"a">, "title"> {
   className?: string;
-  title: string;
+  title: string | React.ReactNode;
   href: string;
   logo?: string;
+  titleSvg?: string;
 }
 
 export default function Navigation() {
@@ -107,13 +108,13 @@ export default function Navigation() {
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="/explore" className="hover:bg-gray-100 h-full" title="acm.explore" logo="/explore-icon.svg">
+                  <ListItem href="/explore" className="hover:bg-gray-100 h-full" title="acm.explore" titleSvg="/acm.explore.svg" logo="/explore-icon.svg">
                     Learn a vast array of topics in computer science.
                   </ListItem>
-                  <ListItem href="/ai" className="hover:bg-gray-100 h-full" title="acm.ai" logo="/ai-icon.svg">
+                  <ListItem href="/ai" className="hover:bg-gray-100 h-full" title="acm.ai" titleSvg="/acm.ai.svg" logo="/ai-icon.svg">
                     Learn AI/ML fundamentals, build models, and solve problems.
                   </ListItem>
-                  <ListItem href="/web" className="hover:bg-gray-100 h-full" title="acm.web" logo="/web-icon.svg">
+                  <ListItem href="/web" className="hover:bg-gray-100 h-full" title="acm.web" titleSvg="/acm.web.svg" logo="/web-icon.svg">
                     Learn how to build websites and web applications.
                   </ListItem>
                 </ul>
@@ -324,7 +325,7 @@ export default function Navigation() {
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   ListItemProps
->(({ className, title, children, href, logo, ...props }, ref) => {
+>(({ className, title, children, href, logo, titleSvg, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -339,7 +340,23 @@ const ListItem = React.forwardRef<
         >
           <div className="flex items-center gap-2">
             {logo && <img src={logo} alt="" className="w-8 h-8" />}
-            <div className="text-lg font-medium leading-none">{title}</div>
+            <div className="text-lg font-medium leading-none">
+              {titleSvg ? (
+                <div className="h-6 flex items-center">
+                  <img 
+                    src={titleSvg} 
+                    alt={typeof title === 'string' ? title : ''} 
+                    width={titleSvg.includes('explore') ? 160 : 
+                           titleSvg.includes('ai') ? 90 : 
+                           titleSvg.includes('web') ? 130 : 120}
+                    height={24}
+                    className="object-contain object-left"
+                  />
+                </div>
+              ) : (
+                title
+              )}
+            </div>
           </div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}

@@ -21,7 +21,7 @@ export default function Sponsors({
   return (
     <div className="w-full max-w-7xl mx-auto mt-20 px-4 sm:px-6 md:px-8 mb-[100px]">
       <div className="text-center">
-        <h2 className="text-[20px] mb-1 font-roboto text-black">{mainTitle}</h2>
+        <h2 className="text-[20px] mb-1 font-geistSans text-black">{mainTitle}</h2>
         <a 
           href={linkPath}
           className="text-[#575757] text-sm hover:text-blue-800 inline-flex items-center"
@@ -43,10 +43,10 @@ export default function Sponsors({
         </a>
       </div>
 
-      <div className={`grid ${
+      <div className={`grid mt-5 ${
         sponsors.length >= 5 
           ? 'grid-cols-2 md:grid-cols-5' 
-          : `grid-cols-2 md:grid-cols-${sponsors.length}`
+          : 'grid-cols-1 md:grid-cols-4'
       } items-center justify-items-center gap-4 ${
         sponsors.length < 5 ? 'md:place-content-center' : ''
       }`}>

@@ -2,21 +2,53 @@
     "events": [
       {
         "event": "Workshop",
-        "location": "Westgate E201",
-        "date": "2024-02-11",
-        "time": "6:00 PM",
-        "title": "Intro to the Unity Game Engine",
-        "presenter": "Wyatt Petula",
-        "link": "f"
-      },
-      {
-        "event": "Workshop",
         "location": "Osmond 106",
         "date": "2024-02-12",
         "time": "6:00 PM",
+        "title": "Robotics Workshop",
+        "presenter": "Vivek Nayar",
+        "link": "f",
+        "committee": "explore"
+      },
+      {
+        "event": "Workshop",
+        "location": "Westgate E201",
+        "date": "2024-02-13",
+        "time": "6:00 PM",
         "title": "Intro to ML",
-        "presenter": "Kunal Malhotra",
-        "link": "f"
+        "presenter": "Arnav Mehta",
+        "link": "f",
+        "committee": "ai"
+      },
+      {
+        "event": "Workshop",
+        "location": "Westgate E201",
+        "date": "2024-02-14",
+        "time": "6:00 PM",
+        "title": "Intro to ML",
+        "presenter": "Arnav Mehta",
+        "link": "f",
+        "committee": "ai"
+      },
+      {
+        "event": "Workshop",
+        "location": "Westgate E201",
+        "date": "2024-02-15",
+        "time": "6:00 PM",
+        "title": "Intro to ML",
+        "presenter": "Arnav Mehta",
+        "link": "f",
+        "committee": "ai"
+      },
+      {
+        "event": "Workshop",
+        "location": "Westgate E201",
+        "date": "2024-02-16",
+        "time": "6:00 PM",
+        "title": "Intro to ML",
+        "presenter": "Arnav Mehta",
+        "link": "f",
+        "committee": "web"
       }
     ]
   }
