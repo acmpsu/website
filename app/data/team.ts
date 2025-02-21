@@ -1,4 +1,4 @@
-import { TeamMember } from '../types/team';
+import { TeamMember } from '../types/interfaces';
 
 export const executiveBoard: TeamMember[] = [
   {
@@ -39,11 +39,11 @@ export const executiveBoard: TeamMember[] = [
     }
   },
   {
-    name: "Julian Mehta",
+    name: "Julian Gavino",
     role: "AI Director",
     image: "/headshots/placeholder.png",
     links: {
-      linkedin: "https://linkedin.com/in/johndoe"
+      linkedin: "https://www.linkedin.com/in/julian-gavino-72371822a/"
     },
     quote: {
         text: 'Placeholder',

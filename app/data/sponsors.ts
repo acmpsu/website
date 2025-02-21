@@ -1,9 +1,5 @@
-export interface Sponsor {
-    name: string;
-    url: string;
-    logoPath: string;
-  }
-  
+import { Sponsor } from "../types/interfaces";
+
 export const sponsors: Sponsor[] = [
 {
     name: "Boeing",

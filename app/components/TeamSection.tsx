@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { TeamMember } from "../types/team";
-import { Badge } from "@/components/ui/badge";
+import { TeamMember } from "../types/interfaces";
+import { Badge } from "@/app/components/ui/badge";
 
 interface TeamSectionProps {
   title: string;
