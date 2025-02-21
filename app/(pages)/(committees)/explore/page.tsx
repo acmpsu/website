@@ -38,9 +38,9 @@ export default function ACMExplore() {
   return (
     <div>
       <Navigation />
-        <div className="flex-grow w-full mx-auto px-4">
+        <div className="flex-grow w-full mx-auto">
           {/* Hero Section */}
-          <div className="flex justify-center flex-col overflow-hidden lg:justify-end items-center">
+          <div className="flex bg-gradient-to-b from-[#ffffff] via-[#f5f5f5] to-[#e6f0e8] justify-center flex-col overflow-hidden lg:justify-end items-center">
             <ContainerScroll
               titleComponent={
                 <>
@@ -84,14 +84,14 @@ export default function ACMExplore() {
           {/* What We Do Section */}
           <div className="w-full">
             <div className="max-w-3xl mx-auto text-center pt-20 pb-20 space-y-16"> 
-              <h2 className="text-3xl text-black flex items-center justify-center gap-4 font-geistSans font-medium mb-4">
+              <h2 className="text-5xl text-black flex items-center justify-center gap-4 font-geistSans font-medium mb-4">
                 What is 
                 <Image 
                   src="/acm.explore.svg" 
                   alt="Explore Words" 
-                  width={200} 
-                  height={60} 
-                  className="w-[200px] h-auto mt-2"
+                  width={300} 
+                  height={100} 
+                  className="w-[300px] h-auto mt-3"
                 />
               </h2>
               <p className="text-gray-700 ml-4 mr-4 font-geistSans text-lg leading-relaxed">
@@ -232,13 +232,13 @@ export default function ACMExplore() {
             </div>
           </div>
             
-          <div className="bg-[#42754b] p-4 pt-20 pb-20 mb-20 space-y-16">
+          <div className="bg-gradient-to-b from-[#ffffff] via-[#e6f0e8] to-[#ffffff] p-4 pt-20 pb-20 mb-20 space-y-16">
             <div className="flex items-center justify-center mb-10">
-              <h2 className="text-3xl font-geistSans font-medium text-white">Current Events</h2>
+              <h2 className="text-3xl font-geistSans font-medium text-black">Current Events</h2>
             </div>
 
-            <div className="flex justify-center w-3/4 mx-auto items-center">
-              <EventCards committee="explore" textColor="text-white"/>
+            <div className="w-3/4 mx-auto">
+              <EventCards committee="explore" textColor="text-black"/>
             </div>
           </div>
           

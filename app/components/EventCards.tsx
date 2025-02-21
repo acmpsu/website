@@ -60,15 +60,17 @@ export function EventCards({
         );
     }
 
-    // Determine grid columns based on number of events
+    // Determine grid columns based on number of events and maxCards
     const gridCols = displayEvents.length === 1 
         ? 'grid-cols-1' 
-        : displayEvents.length === 2 
-            ? 'grid-cols-1 md:grid-cols-2' 
-            : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
+        : maxCards === 3 
+            ? 'grid-cols-1 md:grid-cols-3' 
+            : displayEvents.length === 2 
+                ? 'grid-cols-1 md:grid-cols-2' 
+                : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
 
     return (
-        <div className={`grid ${gridCols} gap-4`}>
+        <div className={`grid ${gridCols} gap-8 place-items-center`}>
             {displayEvents.map((event) => {
                 // Get colors based on event's committee
                 const eventColors = event.committee ? committeeColors[event.committee as Committee] : {
@@ -80,7 +82,7 @@ export function EventCards({
                 return (
                     <div 
                         key={`${event.date}-${event.title}`}
-                        className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow w-[300px] mx-auto"
+                        className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow w-[300px]"
                     >
                         <div className={`h-40 ${eventColors.header} relative`}>
                             <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm text-black font-medium">

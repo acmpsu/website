@@ -238,7 +238,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="gap-5 mb-10">
+          <div className="w-full max-w-4xl mx-auto mb-10">
             <EventCards maxCards={3} textColor="text-black"/>
           </div>
           
