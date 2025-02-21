@@ -3,7 +3,7 @@ export interface TeamMember {
     role: string;
     image: string;
     links: {
-      github: string;
+      github?: string;
       linkedin: string;
     };
     quote: {

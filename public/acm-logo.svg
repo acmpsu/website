@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1562.98 1749.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2a3e77;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: CocogooseProTrial-Regular, CocogooseProTrial;
+        font-size: 483.88px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"/>
+  <text class="cls-2" transform="translate(173.14 1022.07)"><tspan x="0" y="0">acm</tspan></text>
+</svg>

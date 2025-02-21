@@ -21,7 +21,7 @@ const sponsorImages = [
     }
   ];
 
-export default function DevPSU() {
+export default function ACMAI() {
   return (
     <div>
       <Navigation />

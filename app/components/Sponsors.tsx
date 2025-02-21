@@ -43,10 +43,10 @@ export default function Sponsors({
         </a>
       </div>
 
-      <div className={`grid ${
+      <div className={`grid mt-5 ${
         sponsors.length >= 5 
           ? 'grid-cols-2 md:grid-cols-5' 
-          : `grid-cols-2 md:grid-cols-${sponsors.length}`
+          : 'grid-cols-1 md:grid-cols-4'
       } items-center justify-items-center gap-4 ${
         sponsors.length < 5 ? 'md:place-content-center' : ''
       }`}>

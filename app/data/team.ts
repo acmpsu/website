@@ -4,9 +4,8 @@ export const executiveBoard: TeamMember[] = [
   {
     name: "Liam Woods",
     role: "President",
-    image: "/headshots/placeholder.png",
+    image: "/headshots/liamwoods.jpg",
     links: {
-      github: "https://github.com/johndoe",
       linkedin: "https://linkedin.com/in/johndoe"
     },
     quote: {
@@ -19,8 +18,7 @@ export const executiveBoard: TeamMember[] = [
     role: "Vice-President",
     image: "/headshots/placeholder.png",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      linkedin: "https://www.linkedin.com/in/sainathrnair/"
     },
     quote: {
         text: 'Placeholder',
@@ -29,10 +27,10 @@ export const executiveBoard: TeamMember[] = [
   },
   {
     name: "Dylan McDonnell",
-    role: "DEV PSU Director",
+    role: "Explore Director",
     image: "/headshots/placeholder.png",
     links: {
-      github: "https://github.com/johndoe",
+      github: "https://github.com/Blizzero",
       linkedin: "https://www.linkedin.com/in/dylan-mcdonnell-978295284/"
     },
     quote: {
@@ -41,11 +39,10 @@ export const executiveBoard: TeamMember[] = [
     }
   },
   {
-    name: "Kunal Malhotra",
-    role: "ML PSU Director",
+    name: "Julian Mehta",
+    role: "AI Director",
     image: "/headshots/placeholder.png",
     links: {
-      github: "https://github.com/johndoe",
       linkedin: "https://linkedin.com/in/johndoe"
     },
     quote: {
@@ -55,11 +52,11 @@ export const executiveBoard: TeamMember[] = [
   },
   {
     name: "David Youm",
-    role: "Webmaster",
-    image: "/headshots/placeholder.png",
+    role: "Software Engineer",
+    image: "/headshots/davidyoum.jpg",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      github: "https://github.com/davidyoum",
+      linkedin: "https://linkedin.com/in/davidyoum"
     },
     quote: {
         text: '"I Built This Website"',
@@ -69,23 +66,9 @@ export const executiveBoard: TeamMember[] = [
   {
     name: "Dalima Lappia",
     role: "Treasurer",
-    image: "/headshots/placeholder.png",
+    image: "/headshots/dalimalappia.jpg",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
-    },
-    quote: {
-        text: 'Placeholder',
-        attribution: ""
-    }
-  },
-  {
-    name: "Vaibhav Kumar",
-    role: "Secretary",
-    image: "/headshots/placeholder.png",
-    links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      linkedin: "https://www.linkedin.com/in/dalima-lappia-b91201283/"
     },
     quote: {
         text: 'Placeholder',
@@ -95,10 +78,9 @@ export const executiveBoard: TeamMember[] = [
   {
     name: "Sinjoy Saha",
     role: "Secretary",
-    image: "/headshots/placeholder.png",
+    image: "/headshots/sinjoysaha.jpg",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      linkedin: "https://www.linkedin.com/in/sinjoysaha/"
     },
     quote: {
         text: 'Placeholder',
@@ -108,10 +90,9 @@ export const executiveBoard: TeamMember[] = [
   {
     name: "Matthew Gurer",
     role: "Corporate Relations Director",
-    image: "/headshots/placeholder.png",
+    image: "/headshots/matthewgurer.jpg",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      linkedin: "https://www.linkedin.com/in/matthew-gurer/"
     },
     quote: {
         text: 'Placeholder',
@@ -121,10 +102,9 @@ export const executiveBoard: TeamMember[] = [
   {
     name: "Dennis Miczek",
     role: "Event Planner",
-    image: "/headshots/placeholder.png",
+    image: "/headshots/dennismiczek.jpg",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      linkedin: "https://www.linkedin.com/in/dennis-miczek/"
     },
     quote: {
         text: 'Placeholder',
@@ -136,11 +116,10 @@ export const executiveBoard: TeamMember[] = [
 export const captains: TeamMember[] = [
   {
     name: "Wyatt Petula",
-    role: "DEV PSU Captain",
-    image: "/headshots/placeholder.png",
+    role: "Explore Captain",
+    image: "/headshots/wyattpetula.jpg",
     links: {
-      github: "https://github.com/janesmith",
-      linkedin: "https://linkedin.com/in/janesmith"
+      linkedin: "https://www.linkedin.com/in/wyatt-petula/"
     },
     quote: {
         text: 'Placeholder',
@@ -149,11 +128,10 @@ export const captains: TeamMember[] = [
   },
   {
     name: "Vivek Nayar",
-    role: "DEV PSU Captain",
-    image: "/headshots/placeholder.png",
+    role: "Explore Captain",
+    image: "/headshots/viveknayar.jpg",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      linkedin: "https://www.linkedin.com/in/vivek-nayar-619808234/"
     },
     quote: {
         text: 'Placeholder',
@@ -162,11 +140,10 @@ export const captains: TeamMember[] = [
   },
   {
     name: "Gitika Saini",
-    role: "DEV PSU Captain",
-    image: "/headshots/placeholder.png",
+    role: "Explore Captain",
+    image: "/headshots/gitikasaini.jpg",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      linkedin: "https://www.linkedin.com/in/gitika-saini/"
     },
     quote: {
         text: 'Placeholder',
@@ -175,10 +152,9 @@ export const captains: TeamMember[] = [
   },
   {
     name: "Tife Akintan",
-    role: "DEV PSU Captain",
+    role: "Explore Captain",
     image: "/headshots/placeholder.png",
     links: {
-      github: "https://github.com/johndoe",
       linkedin: "https://linkedin.com/in/johndoe"
     },
     quote: {
@@ -188,37 +164,9 @@ export const captains: TeamMember[] = [
   },
   {
     name: "Arnav Mehta",
-    role: "ML PSU Captain",
+    role: "AI Captain",
     image: "/headshots/placeholder.png",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
-    },
-    quote: {
-        text: 'Placeholder',
-        attribution: ""
-    }
-  },
-  {
-    name: "Julian Mehta",
-    role: "ML PSU Captain",
-    image: "/headshots/placeholder.png",
-    links: {
-
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
-    },
-    quote: {
-        text: 'Placeholder',
-        attribution: ""
-    }
-  },
-  {
-    name: "Lorem Ipsum",
-    role: "ML PSU Captain",
-    image: "/headshots/placeholder.png",
-    links: {
-      github: "https://github.com/johndoe",
       linkedin: "https://linkedin.com/in/johndoe"
     },
     quote: {
@@ -231,8 +179,7 @@ export const captains: TeamMember[] = [
     role: "Corporate Relations Captain",
     image: "/headshots/placeholder.png",
     links: {
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe"
+      linkedin: "https://www.linkedin.com/in/adim-ogbolu-10873a31b/"
     },
     quote: {
         text: 'Placeholder',

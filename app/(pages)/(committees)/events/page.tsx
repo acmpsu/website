@@ -1,4 +1,4 @@
-import {EventCards} from "@/app/components/Table"
+import {EventCards} from "@/app/components/EventCards"
 import Navigation from "@/app/components/Navigation"
 import Footer from "@/app/components/Footer"
 
@@ -10,8 +10,10 @@ export default function Schedule() {
         <h1 className="text-4xl font-bold">Schedule</h1>
       </div>
 
-      <div className="flex w-3/4 mx-auto mt-10 mb-20 items-center">
-        <EventCards />
+      <div className="flex w-full max-w-[1400px] mx-auto mt-10 mb-20 px-4">
+        <div className="w-full">
+          <EventCards />
+        </div>
       </div>
       <Footer />
 
