@@ -27,8 +27,8 @@ export const executiveBoard: TeamMember[] = [
   },
   {
     name: "Dylan McDonnell",
-    role: "Explore Director",
-    image: "/headshots/placeholder.png",
+    role: "Venture Director",
+    image: "/headshots/dylanmcdonnell.jpg",
     links: {
       github: "https://github.com/Blizzero",
       linkedin: "https://www.linkedin.com/in/dylan-mcdonnell-978295284/"
@@ -116,7 +116,7 @@ export const executiveBoard: TeamMember[] = [
 export const captains: TeamMember[] = [
   {
     name: "Wyatt Petula",
-    role: "Explore Captain",
+    role: "Venture Captain",
     image: "/headshots/wyattpetula.jpg",
     links: {
       linkedin: "https://www.linkedin.com/in/wyatt-petula/"
@@ -128,7 +128,7 @@ export const captains: TeamMember[] = [
   },
   {
     name: "Vivek Nayar",
-    role: "Explore Captain",
+    role: "Venture Captain",
     image: "/headshots/viveknayar.jpg",
     links: {
       linkedin: "https://www.linkedin.com/in/vivek-nayar-619808234/"
@@ -140,7 +140,7 @@ export const captains: TeamMember[] = [
   },
   {
     name: "Gitika Saini",
-    role: "Explore Captain",
+    role: "Venture Captain",
     image: "/headshots/gitikasaini.jpg",
     links: {
       linkedin: "https://www.linkedin.com/in/gitika-saini/"
@@ -152,7 +152,7 @@ export const captains: TeamMember[] = [
   },
   {
     name: "Tife Akintan",
-    role: "Explore Captain",
+    role: "Venture Captain",
     image: "/headshots/placeholder.png",
     links: {
       linkedin: "https://linkedin.com/in/johndoe"
