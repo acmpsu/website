@@ -15,7 +15,7 @@ export const executiveBoard: TeamMember[] = [
   },
   {
     name: "Sainath Nair",
-    role: "Vice-President",
+    role: "Vice President",
     image: "/headshots/placeholder.png",
     links: {
       linkedin: "https://www.linkedin.com/in/sainathrnair/"
