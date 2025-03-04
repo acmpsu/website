@@ -38,7 +38,7 @@ export default function Footer() {
               <ul>
                 <li>
                   <Link
-                    href="/whatwedo"
+                    href="/about"
                     className="text-sm text-gray-500 hover:text-gray-900"
                   >
                     What We Do
@@ -79,7 +79,7 @@ export default function Footer() {
               <ul>
                 <li>
                   <Link
-                    href="/devpsu"
+                    href="/explore"
                     className="text-sm text-gray-500 hover:text-gray-900"
                   >
                     acm.explore
@@ -87,7 +87,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/mlpsu"
+                    href="/ai"
                     className="text-sm text-gray-500 hover:text-gray-900"
                   >
                     acm.ai
@@ -95,7 +95,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/mlpsu"
+                    href="/web"
                     className="text-sm text-gray-500 hover:text-gray-900"
                   >
                     acm.web
