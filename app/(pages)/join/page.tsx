@@ -19,7 +19,7 @@ export default function Join() {
         <div className="absolute inset-0 flex flex-col justify-center items-center text-black">
           <div className="flex items-center gap-4 mb-4">
             <Image 
-              src="/acm-logo.png"
+              src="/acm-logo.svg"
               alt="ACM Logo"
               width={100}
               height={100}
@@ -103,11 +103,11 @@ export default function Join() {
           <h2 className="text-3xl font-bold text-black mb-8 text-center">FAQ</h2>
           <div className="flex justify-center w-full">
             <Accordion className="w-3/4" type="single" collapsible>
-              <AccordionItem value="item-1" className="bg-white rounded-t-lg">
-                <AccordionTrigger className="ml-4 mr-4">Is there a membership fee?</AccordionTrigger>
-                <AccordionContent className="ml-4 mr-4">
-                  No, membership is completely free for all Penn State students!
-                </AccordionContent>
+              <AccordionItem value="item-1" className="bg-white">
+                  <AccordionTrigger className="pl-4 pr-4 bg-[#193668]">Is there a membership fee?</AccordionTrigger>
+                  <AccordionContent className="pl-4 pr-4 text-white bg-[#193668]">
+                  Our members come from diverse academic backgrounds, primarily in Computer Science, Computer Engineering, Data Science, and related STEM fields. We have students from freshman to graduate level, maintaining a strong pipeline of talent.
+                  </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2" className="bg-white">

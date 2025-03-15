@@ -5,6 +5,7 @@ export interface TeamMember {
   links: {
     github?: string;
     linkedin: string;
+    link?: string;
   };
   quote: {
     text: string;

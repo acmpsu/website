@@ -26,7 +26,7 @@ export default function Friends() {
         <div className="absolute inset-0 flex flex-col justify-center items-center text-black">
           <div className="flex items-center gap-4 mb-4">
             <Image 
-              src="/acm-logo.png"
+              src="/acm-logo.svg"
               alt="ACM Logo"
               width={100}
               height={100}

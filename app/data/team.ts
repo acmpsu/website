@@ -71,8 +71,8 @@ export const executiveBoard: TeamMember[] = [
       linkedin: "https://www.linkedin.com/in/dalima-lappia-b91201283/"
     },
     quote: {
-        text: 'Placeholder',
-        attribution: ""
+        text: 'Knowing is not enough; we must apply. Willing is not enough; we must do.',
+        attribution: "— Wolfgang von Goethe"
     }
   },
   {
@@ -80,7 +80,9 @@ export const executiveBoard: TeamMember[] = [
     role: "Secretary",
     image: "/headshots/sinjoysaha.jpg",
     links: {
-      linkedin: "https://www.linkedin.com/in/sinjoysaha/"
+      linkedin: "https://www.linkedin.com/in/sinjoysaha/",
+      github: "https://github.com/sinjoy-saha",
+      link: "https://sinjoysaha.github.io/"
     },
     quote: {
         text: 'Placeholder',
