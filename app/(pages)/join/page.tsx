@@ -104,29 +104,29 @@ export default function Join() {
           <div className="flex justify-center w-full">
             <Accordion className="w-3/4" type="single" collapsible>
               <AccordionItem value="item-1" className="bg-white">
-                  <AccordionTrigger className="pl-4 pr-4 bg-[#193668]">Is there a membership fee?</AccordionTrigger>
+                  <AccordionTrigger className="pl-4 pr-4 rounded-t-lg bg-[#193668]">Is there a membership fee?</AccordionTrigger>
                   <AccordionContent className="pl-4 pr-4 text-white bg-[#193668]">
                   Our members come from diverse academic backgrounds, primarily in Computer Science, Computer Engineering, Data Science, and related STEM fields. We have students from freshman to graduate level, maintaining a strong pipeline of talent.
                   </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2" className="bg-white">
-                <AccordionTrigger className="ml-4 mr-4">Do I need to be a Computer Science major?</AccordionTrigger>
-                <AccordionContent className="ml-4 mr-4">
+                <AccordionTrigger className="pl-4 pr-4 bg-[#193668]">Do I need to be a Computer Science major?</AccordionTrigger>
+                <AccordionContent className="pl-4 pr-4 text-white bg-[#193668]">
                   Not at all! We welcome students from all majors who are interested in technology and computing.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3" className="bg-white">
-                <AccordionTrigger className="ml-4 mr-4">How much time commitment is required?</AccordionTrigger>
-                <AccordionContent className="ml-4 mr-4">
+                <AccordionTrigger className="pl-4 pr-4 bg-[#193668]">How much time commitment is required?</AccordionTrigger>
+                <AccordionContent className="pl-4 pr-4 text-white bg-[#193668]">
                   Participation is flexible! You can attend as many or as few events as you'd like based on your schedule and interests.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="bg-white rounded-b-lg">
-                <AccordionTrigger className="ml-4 mr-4">Can freshmen join?</AccordionTrigger>
-                <AccordionContent className="ml-4 mr-4">
+              <AccordionItem value="item-4" className="bg-white rounded-b-lg [&[data-state=open]]:rounded-b-none">
+                <AccordionTrigger className="pl-4 pr-4 bg-[#193668] rounded-b-lg [&[data-state=open]]:rounded-b-none">Can freshmen join?</AccordionTrigger>
+                <AccordionContent className="pl-4 pr-4 text-white bg-[#193668] rounded-b-lg">
                   Absolutely! We encourage freshmen to join early to make the most of networking and learning opportunities.
                 </AccordionContent>
               </AccordionItem>

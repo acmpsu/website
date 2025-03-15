@@ -41,7 +41,7 @@ export default function Friends() {
       </div>
       
       <div className="max-w-6xl mx-auto text-center px-4 py-5">
-        <p className="text-md text-gray-600 mt-2 mb-4">
+        <p className="text-md text-gray-600 mt-2 mb-10">
           Here are some of our partner clubs we work with.
         </p>
         <div className="mb-10">

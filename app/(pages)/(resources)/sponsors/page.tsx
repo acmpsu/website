@@ -48,7 +48,7 @@ export default function Sponsors() {
         </div>
       
         <div className="max-w-6xl mx-auto text-center px-4 py-5">
-            <p className="text-md text-gray-600 mt-2">
+            <p className="text-md text-gray-600 mt-2 mb-10">
                 Here are some of our sponsors we have worked with.
             </p>
             <div className="mb-10">
@@ -113,8 +113,8 @@ export default function Sponsors() {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-6" className="bg-white rounded-b-lg">
-                    <AccordionTrigger className="pl-4 pr-4 rounded-b-lg bg-[#193668]">Can sponsors customize their involvement?</AccordionTrigger>
+                <AccordionItem value="item-6" className="bg-white rounded-b-lg [&[data-state=open]]:rounded-b-none">
+                    <AccordionTrigger className="pl-4 pr-4 rounded-b-lg bg-[#193668] [&[data-state=open]]:rounded-b-none">Can sponsors customize their involvement?</AccordionTrigger>
                     <AccordionContent className="pl-4 pr-4 text-white bg-[#193668]">
                     Yes! While we have standard sponsorship tiers, we're always open to discussing custom partnerships that align with your company's goals and our members' interests. This could include specialized workshops, ongoing mentorship programs, or targeted recruitment initiatives.
                     </AccordionContent>
