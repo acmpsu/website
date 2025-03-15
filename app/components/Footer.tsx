@@ -28,8 +28,8 @@ export default function Footer() {
               <h3 className="text-sm font-semibold text-gray-900 mb-1">ACM</h3>
               <ul>
                 <li>
-                  <Link href="/whatwedo" className="text-sm text-gray-500 hover:text-gray-900">
-                    What We Do
+                  <Link href="/about" className="text-sm text-gray-500 hover:text-gray-900">
+                    About
                   </Link>
                 </li>
                 <li>
@@ -55,20 +55,20 @@ export default function Footer() {
               <h3 className="text-sm font-semibold text-gray-900 mb-1">Committees</h3>
               <ul>
                 <li>
-                  <Link href="/devpsu" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link href="/explore" className="text-sm text-gray-500 hover:text-gray-900">
                     acm.explore
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mlpsu" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link href="/ai" className="text-sm text-gray-500 hover:text-gray-900">
                     acm.ai
                   </Link>
                 </li>
-                <li>
-                  <Link href="/mlpsu" className="text-sm text-gray-500 hover:text-gray-900">
+                {/* <li>
+                  <Link href="/web" className="text-sm text-gray-500 hover:text-gray-900">
                     acm.web
                   </Link>
-                </li>      
+                </li>       */}
               </ul>
             </div>
 

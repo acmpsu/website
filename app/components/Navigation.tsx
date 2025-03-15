@@ -114,9 +114,20 @@ export default function Navigation() {
                   <ListItem href="/ai" className="hover:bg-gray-100 h-full" title="acm.ai" titleSvg="/acm.ai.svg" logo="/ai-icon.svg">
                     Learn AI/ML fundamentals, build models, and solve problems.
                   </ListItem>
-                  <ListItem href="/web" className="hover:bg-gray-100 h-full" title="acm.web" titleSvg="/acm.web.svg" logo="/web-icon.svg">
-                    Learn how to build websites and web applications.
-                  </ListItem>
+                  <div className="relative">
+                    <div className="absolute inset-0 backdrop-blur-[1px] z-10 flex items-center justify-center">
+                      <span className="bg-gray-200 text-black px-3 py-1 rounded-full font-medium">Coming Soon</span>
+                    </div>
+                    <ListItem 
+                      className="opacity-60" 
+                      titleSvg="/acm.web.svg" 
+                      logo="/web-icon.svg"
+                      title="acm.web"
+                      href={""}
+                    >
+                      Learn how to build websites and web applications.
+                    </ListItem>
+                  </div>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -247,15 +258,20 @@ export default function Navigation() {
                           </div>
                         </div>
                       </Link>
-                      <Link href="/web" className="block p-2 hover:bg-gray-100 rounded">
-                        <div className="flex items-center gap-2">
-                          <Image src="/web-icon.svg" alt="acm.web" width={40} height={40} />
-                          <div>
-                            <div className="font-bold">acm.web</div>
-                            <div className="text-sm text-gray-500">Learn how to build websites and web applications.</div>
-                          </div>
+                      <div className="relative">
+                        <div className="absolute inset-0 backdrop-blur-[1px] z-10 flex items-center justify-center">
+                          <span className="bg-gray-200 text-black px-3 py-1 rounded-full font-medium">Coming Soon</span>
                         </div>
-                      </Link>
+                        <Link href="" className="block p-2 opacity-60">
+                          <div className="flex items-center gap-2">
+                            <Image src="/web-icon.svg" alt="acm.web" width={40} height={40} />
+                            <div>
+                              <div className="font-bold">acm.web</div>
+                              <div className="text-sm text-gray-500">Learn how to build websites and web applications.</div>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
                     </div>
                   )}
                 </div>
