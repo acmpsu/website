@@ -6,6 +6,7 @@ import Link from "next/link";
 import Sponsors from "@/app/components/Sponsors";
 import { ContainerScroll } from "@/app/components/ui/container-scroll-animation";
 import { EventCards } from "@/app/components/EventCards";
+import { HoverBorderGradient } from "@/app/components/ui/hover-border-gradient";
 
 const sponsorImages = [
     {
@@ -240,6 +241,19 @@ export default function ACMExplore() {
             <div className="w-3/4 mx-auto">
               <EventCards committee="explore" textColor="text-black"/>
             </div>
+
+            {/* View All Events Button */}
+            <div className="flex justify-center mt-10">
+              <a href="/events">
+                <HoverBorderGradient
+                containerClassName="rounded-full"
+                as="button"
+                className="bg-white text-black flex items-center space-x-2 dark:bg-black dark:text-white"
+              >
+                <span>View All Events</span>
+              </HoverBorderGradient>
+            </a>
+          </div>
           </div>
           
 

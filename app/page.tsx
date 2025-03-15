@@ -238,12 +238,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-full max-w-4xl mx-auto mb-10">
+          <div className="w-full max-w-4xl mx-auto">
             <EventCards maxCards={3} textColor="text-black"/>
           </div>
           
           {/* View All Events Button */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-10">
             <a href="/events">
               <HoverBorderGradient
                 containerClassName="rounded-full"

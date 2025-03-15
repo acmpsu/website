@@ -7,6 +7,7 @@ import { CodeBlockWithCode } from "@/app/components/Codeblock";
 import Sponsors from "@/app/components/Sponsors";
 import { ContainerScroll } from "@/app/components/ui/container-scroll-animation";
 import { EventCards } from "@/app/components/EventCards";
+import { HoverBorderGradient } from "@/app/components/ui/hover-border-gradient";
 
 const sponsorImages = [
   {
@@ -102,9 +103,22 @@ export default function ACMAI() {
           <h2 className="text-3xl font-geistSans font-medium text-black">Current Events</h2>
         </div>
 
-        <div className="w-full justify-center mx-auto">
+        <div className="w-full max-w-4xl mx-auto">
           <EventCards committee="ai" textColor="text-black"/>
         </div>
+
+        {/* View All Events Button */}
+          <div className="flex justify-center mt-4">
+            <a href="/events">
+              <HoverBorderGradient
+                containerClassName="rounded-full"
+                as="button"
+                className="bg-white text-black flex items-center space-x-2 dark:bg-black dark:text-white"
+              >
+                <span>View All Events</span>
+              </HoverBorderGradient>
+            </a>
+          </div>
       </div>
 
       <Sponsors sponsors={sponsorImages} linkPath="/friends" mainTitle="Penn State ACM is working with leading tech clubs." linkText="View our relationships" />
@@ -208,7 +222,7 @@ export default function ACMAI() {
           </div>
           <Link href="/join" className="inline-block">
             <Button className="bg-blue-500 hover:bg-blue-600">
-              Join ML PSU
+              Join acm.ai
             </Button>
           </Link>
         </div>
