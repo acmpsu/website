@@ -15,8 +15,7 @@ export default function Contact() {
             <p className="text-lg">Vice President: vicepresident@acm.psu.edu</p>
             <p className="text-lg">Secretary: secretary@acm.psu.edu</p>
             <p className="text-lg">Treasurer: treasurer@acm.psu.edu</p>
-            <p className="text-lg">Webmaster: webmaster@acm.psu.edu</p>
-            <p className="text-lg">Corporate Relations: corporate@acm.psu.edu</p>
+            <p className="text-lg">Corporate Relations: corporaterelations@acm.psu.edu</p>
           </div>
         </div>
       </div>

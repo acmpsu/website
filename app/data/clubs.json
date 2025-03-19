@@ -1,0 +1,24 @@
+{
+  "clubPartners": [
+    {
+      "name": "IEEE",
+      "url": "https://sites.psu.edu/psuieee/",
+      "logoPath": "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqyWLnIcGrZOdU2M0i7el6JSqXHm4g9Qa3L5KN"
+    },
+    {
+      "name": "HackPSU",
+      "url": "https://hackpsu.org/",
+      "logoPath": "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq7m7dz3X3ncYTE2dJVXLq8DSBIN1ZWgwtlGxH"
+    },
+    {
+      "name": "AWC",
+      "url": "https://awc.cse.psu.edu/",
+      "logoPath": "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqXoP5XF1xxJ0aTsvkt5HpWQCwbNgVflA3hPm7"
+    },
+    {
+      "name": "Nittany AI Student Society",
+      "url": "https://nittanyai.psu.edu/alliance-programs/nittany-ai-student-society/",
+      "logoPath": "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq4sSXFtZw5hjoXscQzBHuDLNAxZPWkv7pY9OF"
+    }
+  ]
+}

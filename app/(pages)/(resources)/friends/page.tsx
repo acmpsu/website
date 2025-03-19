@@ -1,24 +1,11 @@
 "use client";
 
-import { useState, useEffect } from 'react';
 import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
-import { clubPartners } from "@/app/data/clubs";
-import ContactForm from '@/app/components/ContactForm';
+import { clubPartners } from "@/app/data/clubs.json";
 
 export default function Friends() {
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
-
-  // Prevent scrolling when modal is open
-  useEffect(() => {
-    if (isContactFormOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [isContactFormOpen]);
-
   return (
     <div>
       <Navigation />
@@ -72,8 +59,8 @@ export default function Friends() {
         <div className="flex justify-center mt-8 items-center">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
             <a 
-              onClick={() => setIsContactFormOpen(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg transition-colors cursor-pointer"
+              href="mailto:corporaterelations@acmpsu.org"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg transition-colors"
             >
               Partner With Us
             </a>
@@ -81,11 +68,6 @@ export default function Friends() {
         </div>
       </div>
       <Footer />
-
-      <ContactForm 
-        isOpen={isContactFormOpen}
-        onClose={() => setIsContactFormOpen(false)}
-      />
     </div>
   );
 }

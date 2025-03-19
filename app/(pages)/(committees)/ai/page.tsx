@@ -11,25 +11,25 @@ import { HoverBorderGradient } from "@/app/components/ui/hover-border-gradient";
 
 const sponsorImages = [
   {
-    src: "/club-logos/hackpsu.png",
+    src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq7m7dz3X3ncYTE2dJVXLq8DSBIN1ZWgwtlGxH",
     alt: "HackPSU Logo",
     width: 150,
     height: 100,
   },
   {
-    src: "/club-logos/ieee.png",
+    src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqyWLnIcGrZOdU2M0i7el6JSqXHm4g9Qa3L5KN",
     alt: "IEEE Logo",
     width: 150,
     height: 100,
   },
   {
-    src: "/club-logos/awc.png",
+    src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqXoP5XF1xxJ0aTsvkt5HpWQCwbNgVflA3hPm7",
     alt: "AWC Logo",
     width: 150,
     height: 100,
   },
   {
-    src: "/club-logos/nittanyaistudentsociety.png",
+    src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq4sSXFtZw5hjoXscQzBHuDLNAxZPWkv7pY9OF",
     alt: "Nittany AI Student Society Logo",
     width: 150,
     height: 100,
@@ -104,7 +104,7 @@ export default function ACMAI() {
         </div>
 
         <div className="w-full max-w-4xl mx-auto">
-          <EventCards committee="ai" textColor="text-black"/>
+          <EventCards committee="ai" maxCards={3} textColor="text-black"/>
         </div>
 
         {/* View All Events Button */}

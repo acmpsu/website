@@ -8,27 +8,27 @@ import { ContainerScroll } from "@/app/components/ui/container-scroll-animation"
 import { EventCards } from "@/app/components/EventCards";
 import { HoverBorderGradient } from "@/app/components/ui/hover-border-gradient";
 
-const sponsorImages = [
+const clubLogos = [
     {
-      src: "/club-logos/hackpsu.png",
+      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq7m7dz3X3ncYTE2dJVXLq8DSBIN1ZWgwtlGxH",
       alt: "HackPSU Logo",
       width: 150,
       height: 100,
     },
     {
-      src: "/club-logos/ieee.png",
+      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqyWLnIcGrZOdU2M0i7el6JSqXHm4g9Qa3L5KN",
       alt: "IEEE Logo",
       width: 150,
       height: 100,
     },
     {
-      src: "/club-logos/awc.png",
+      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqXoP5XF1xxJ0aTsvkt5HpWQCwbNgVflA3hPm7",
       alt: "AWC Logo",
       width: 150,
       height: 100,
     },
     {
-      src: "/club-logos/nittanyaistudentsociety.png",
+      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq4sSXFtZw5hjoXscQzBHuDLNAxZPWkv7pY9OF",
       alt: "Nittany AI Student Society Logo",
       width: 150,
       height: 100,
@@ -239,25 +239,27 @@ export default function ACMExplore() {
             </div>
 
             <div className="w-3/4 mx-auto">
-              <EventCards committee="explore" textColor="text-black"/>
+              <EventCards committee="explore" maxCards={3} textColor="text-black"/>
             </div>
 
             {/* View All Events Button */}
             <div className="flex justify-center mt-10">
               <a href="/events">
-                <HoverBorderGradient
+              <HoverBorderGradient
+                primaryColor="#00873E"
+                secondaryColor="#34D399"
                 containerClassName="rounded-full"
                 as="button"
                 className="bg-white text-black flex items-center space-x-2 dark:bg-black dark:text-white"
               >
-                <span>View All Events</span>
+                <span>Learn More</span>
               </HoverBorderGradient>
             </a>
           </div>
           </div>
           
 
-          <Sponsors sponsors={sponsorImages} linkPath="/friends" mainTitle="Penn State ACM is working with leading tech clubs." linkText="View our relationships" />
+          <Sponsors sponsors={clubLogos} linkPath="/friends" mainTitle="Penn State ACM is working with leading tech clubs." linkText="View our relationships" />
 
           {/* What We Do Section */}
 

@@ -43,6 +43,26 @@
     {
       "event": "Workshop",
       "location": "Westgate E201",
+      "date": "2024-02-15",
+      "time": "6:00 PM",
+      "title": "Intro to ML",
+      "presenter": "Arnav Mehta",
+      "link": "f",
+      "committee": "ai"
+    },
+    {
+      "event": "Workshop",
+      "location": "Westgate E201",
+      "date": "2024-02-15",
+      "time": "6:00 PM",
+      "title": "Intro to ML",
+      "presenter": "Arnav Mehta",
+      "link": "f",
+      "committee": "ai"
+    },
+    {
+      "event": "Workshop",
+      "location": "Westgate E201",
       "date": "2024-02-16",
       "time": "6:00 PM",
       "title": "Intro to ML",
