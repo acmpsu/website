@@ -3,9 +3,7 @@
 import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
-import { sponsors } from "@/app/data/sponsors";
-import { useState, useEffect } from 'react';
-import ContactForm from '@/app/components/ContactForm';
+import { sponsors } from "@/app/data/sponsors.json";
 
 import {
     Accordion,
@@ -15,17 +13,6 @@ import {
   } from "@/app/components/ui/accordion"
 
 export default function Sponsors() {
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
-
-  // Prevent scrolling when modal is open
-  useEffect(() => {
-    if (isContactFormOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [isContactFormOpen]);
-
   return (
     <div>
         <Navigation />
@@ -48,7 +35,7 @@ export default function Sponsors() {
         </div>
       
         <div className="max-w-6xl mx-auto text-center px-4 py-5">
-            <p className="text-md text-gray-600 mt-2">
+            <p className="text-md text-gray-600 mt-2 mb-10">
                 Here are some of our sponsors we have worked with.
             </p>
             <div className="mb-10">
@@ -74,8 +61,8 @@ export default function Sponsors() {
             </div>
         </div>
         
-        <div className="w-full bg-[#1e407c] p-8 mx-auto px-4 py-12">
-            <h2 className="text-3xl font-medium font-poppins text-white mb-8 text-center">Frequently Asked Questions</h2>
+        <div className="w-full bg-gray-100 p-8 mx-auto px-4 py-12">
+            <h2 className="text-3xl font-medium font-poppins text-black mb-8 text-center">Frequently Asked Questions</h2>
             <div className=" max-w-6xl mx-auto flex justify-center w-full">
                 <Accordion className="w-3/4" type="single" collapsible>
                 <AccordionItem value="item-1" className="bg-white rounded-t-lg">
@@ -113,8 +100,8 @@ export default function Sponsors() {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-6" className="bg-white rounded-b-lg">
-                    <AccordionTrigger className="pl-4 pr-4 rounded-b-lg bg-[#193668]">Can sponsors customize their involvement?</AccordionTrigger>
+                <AccordionItem value="item-6" className="bg-white rounded-b-lg [&[data-state=open]]:rounded-b-none">
+                    <AccordionTrigger className="pl-4 pr-4 rounded-b-lg bg-[#193668] [&[data-state=open]]:rounded-b-none">Can sponsors customize their involvement?</AccordionTrigger>
                     <AccordionContent className="pl-4 pr-4 text-white bg-[#193668]">
                     Yes! While we have standard sponsorship tiers, we're always open to discussing custom partnerships that align with your company's goals and our members' interests. This could include specialized workshops, ongoing mentorship programs, or targeted recruitment initiatives.
                     </AccordionContent>
@@ -127,12 +114,12 @@ export default function Sponsors() {
             <h2 className="text-6xl font-poppins mb-12">Your Support Starts Here.</h2>
             <div className="flex justify-center mt-8 items-center">
               <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
-                <button
-                  onClick={() => setIsContactFormOpen(true)}
+                <a
+                  href="mailto:corporaterelations@acm.psu.edu"
                   className="bg-blue-600 hover:bg-blue-700 text-white font-poppins py-4 px-10 rounded-lg transition-colors"
                 >
                   Contact Us
-                </button>
+                </a>
                 <a 
                   href="/sponsorship-handbook.pdf"
                   className="text-gray-600 hover:text-gray-800 transition-colors text-sm"
@@ -146,11 +133,6 @@ export default function Sponsors() {
         </div>
 
         <Footer />
-
-        <ContactForm 
-          isOpen={isContactFormOpen}
-          onClose={() => setIsContactFormOpen(false)}
-        />
     </div>
   );
 }

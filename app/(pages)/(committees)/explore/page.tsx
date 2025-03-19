@@ -6,14 +6,34 @@ import Link from "next/link";
 import Sponsors from "@/app/components/Sponsors";
 import { ContainerScroll } from "@/app/components/ui/container-scroll-animation";
 import { EventCards } from "@/app/components/EventCards";
-import { clubPartners } from "@/app/data/clubs";
+import { HoverBorderGradient } from "@/app/components/ui/hover-border-gradient";
 
-const sponsorImages = clubPartners.map((partner) => ({
-  src: partner.logoPath,
-  alt: `${partner.name} Logo`,
-  width: 150,
-  height: 100,
-}));
+const clubLogos = [
+    {
+      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq7m7dz3X3ncYTE2dJVXLq8DSBIN1ZWgwtlGxH",
+      alt: "HackPSU Logo",
+      width: 150,
+      height: 100,
+    },
+    {
+      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqyWLnIcGrZOdU2M0i7el6JSqXHm4g9Qa3L5KN",
+      alt: "IEEE Logo",
+      width: 150,
+      height: 100,
+    },
+    {
+      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqXoP5XF1xxJ0aTsvkt5HpWQCwbNgVflA3hPm7",
+      alt: "AWC Logo",
+      width: 150,
+      height: 100,
+    },
+    {
+      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq4sSXFtZw5hjoXscQzBHuDLNAxZPWkv7pY9OF",
+      alt: "Nittany AI Student Society Logo",
+      width: 150,
+      height: 100,
+    }
+  ];
 
 export default function ACMExplore() {
   return (
@@ -247,13 +267,11 @@ export default function ACMExplore() {
       </div>
 
       <Sponsors
-        sponsors={sponsorImages}
+        sponsors={clubLogos}
         linkPath="/friends"
         mainTitle="Penn State ACM is working with leading tech clubs."
         linkText="View our relationships"
       />
-
-      {/* What We Do Section */}
 
       <div className="bg-gray-100 p-4 pt-20 pb-20 mb-20 space-y-16">
         {/* Technical Workshops Section */}
@@ -261,7 +279,6 @@ export default function ACMExplore() {
           <div className="md:w-1/2">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="aspect-video bg-gray-200">
-                {/* Replace with actual image */}
                 <div className="w-full h-full flex items-center justify-center border-2 border-green-600 rounded-lg p-2 aspect-video">
                   <Image
                     src="/carousel-pictures/4.jpg"
@@ -331,19 +348,17 @@ export default function ACMExplore() {
             </div>
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-3xl text-black font-geistSans font-medium mb-4">
-              Project Teams
-            </h2>
+            <h2 className="text-3xl text-black font-geistSans font-medium mb-4">Project Teams</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
               Join our project teams to gain real-world development experience.
-              Work collaboratively on meaningful projects, learn
-              industry-standard practices, and build an impressive portfolio of
-              work.
+              Work collaboratively on meaningful projects, learn industry-standard
+              practices, and build an impressive portfolio of work.
             </p>
           </div>
         </div>
       </div>
 
+      {/* Have Ideas & Ready to Join Section */}
       <div className="flex max-w-6xl mx-auto flex-col md:flex-row mb-20 items-start gap-8 p-8">
         <div className="md:w-1/2 flex flex-col justify-between min-h-[200px]">
           <div>

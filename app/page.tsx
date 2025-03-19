@@ -9,33 +9,34 @@ import Sponsors from "./components/Sponsors";
 import ResponsiveHexagon from "./components/ResponsiveHexagons";
 import Image from 'next/image';
 import { EventCards } from "./components/EventCards";
+
 const sponsorImages = [
   {
-    src: "/company-logos/capital-one.png",
+    src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqM272SCoA2H6tNowsWISfXK8y04Yckh7jUlFP",
     alt: "Capital One Logo",
     width: 200,
     height: 100
   },
   {
-    src: "/company-logos/lockheed-martin.png",
+    src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqYBMCtx45CsUzvAwLeG3a649nPhqfuctXEjOT",
     alt: "Lockheed Martin Logo",
     width: 200,
     height: 100
   },
   {
-    src: "/company-logos/boeing.png",
+    src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqXoMUXAGxxJ0aTsvkt5HpWQCwbNgVflA3hPm7",
     alt: "Boeing Logo",
     width: 200,
     height: 100
   },
   {
-    src: "/company-logos/nittany-ai-advance.png",
+    src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqejLPB7Te5O3vpwGiZ4xbKElygnhDd0ofC9tA",
     alt: "Nittany AI Advance Logo",
     width: 200,
     height: 100
   },
   {
-    src: "/company-logos/textron.png",
+    src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqvwATR2aAqJm5Tbaud7BlSGMOPFKjR6I2hkHX",
     alt: "Textron Logo",
     width: 200,
     height: 100
@@ -238,12 +239,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-full max-w-4xl mx-auto mb-10">
+          <div className="w-full max-w-4xl mx-auto">
             <EventCards maxCards={3} textColor="text-black"/>
           </div>
           
           {/* View All Events Button */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-10">
             <a href="/events">
               <HoverBorderGradient
                 containerClassName="rounded-full"
