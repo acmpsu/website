@@ -1,8 +1,8 @@
-import Link from "next/link"
-import Image from "next/image"
-import { SocialIcon } from 'react-social-icons/component'
-import 'react-social-icons/discord'
-import 'react-social-icons/discord'
+import Link from "next/link";
+import Image from "next/image";
+import { SocialIcon } from "react-social-icons/component";
+import "react-social-icons/discord";
+import "react-social-icons/discord";
 
 export default function Footer() {
   return (
@@ -12,12 +12,21 @@ export default function Footer() {
           {/* Logo */}
           <div className="md:w-1/4">
             <Link href="/" className="inline-block">
-              <Image 
-                src="/acm-logo.svg" 
-                alt="ACM Logo" 
-                width={50} 
-                height={50} 
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1562.98 1749.08"
+                className="w-14 h-14"
+              >
+                <path
+                  fill="#2a3e77"
+                  d="M1472.98,371.39L871.49,24.12c-55.69-32.15-124.31-32.15-180,0L90,371.39C34.31,403.54,0,462.96,0,527.27v694.54c0,64.31,34.31,123.73,90,155.88l601.49,347.27c55.69,32.15,124.31,32.15,180,0l601.49-347.27c55.69-32.15,90-91.58,90-155.88v-694.54c0-64.31-34.31-123.73-90-155.88Z"
+                />
+                <g fill="#fff">
+                  <path d="M453.84,707.29h49.95c6.93,0,10.41,3.47,10.41,10.41v293.97c0,6.94-3.47,10.41-10.41,10.41h-51.77c-5.72,0-9.72-2.69-11.97-8.06l-6.5-15.61c-21.68,20.29-48.91,30.44-81.69,30.44-29.66,0-56.97-7.32-81.95-21.98-24.97-14.65-44.75-34.51-59.31-59.57-14.57-25.06-21.85-52.51-21.85-82.34s7.33-56.93,21.98-81.82c14.65-24.88,34.47-44.62,59.44-59.18s52.2-21.85,81.69-21.85c33.12,0,60.62,10.32,82.47,30.96l7.54-17.69c2.25-5.37,6.24-8.06,11.97-8.06ZM392.84,934.27c11.88-6.67,21.24-15.95,28.1-27.84,6.85-11.88,10.28-25.28,10.28-40.19s-3.38-28.66-10.15-40.71c-6.76-12.05-16.04-21.55-27.84-28.49-11.8-6.93-24.89-10.41-39.28-10.41s-27.45,3.43-39.15,10.28c-11.71,6.85-20.9,16.35-27.58,28.49-6.68,12.14-10.02,25.75-10.02,40.84s3.29,28.53,9.89,40.32c6.59,11.8,15.65,21.03,27.19,27.71,11.53,6.68,24.58,10.02,39.15,10.02s27.53-3.34,39.41-10.02Z" />
+                  <path d="M645.18,1007.9c-24.71-14.65-44.05-34.47-58.01-59.44-13.96-24.97-20.94-52.29-20.94-81.95s6.93-57.53,20.81-82.6c13.87-25.06,33.21-44.96,58.01-59.7,24.8-14.74,52.81-22.11,84.03-22.11,20.46,0,39.67,3.04,57.62,9.1,17.95,6.07,34.03,14.66,48.26,25.75,2.95,2.43,4.42,5.03,4.42,7.8,0,2.08-.78,4.34-2.34,6.76l-33.04,47.09c-2.26,3.3-4.86,4.94-7.8,4.94-1.91,0-4.16-.87-6.76-2.6-8.85-6.07-17.69-10.67-26.54-13.79-8.85-3.12-18.99-4.68-30.44-4.68-14.05,0-27.06,3.64-39.02,10.93s-21.51,17.3-28.62,30.05c-7.11,12.75-10.67,27.1-10.67,43.06s3.6,29.75,10.8,42.4c7.2,12.66,16.82,22.59,28.88,29.79,12.05,7.2,25.01,10.8,38.89,10.8,11.27,0,21.37-1.52,30.31-4.55,8.93-3.03,17.73-7.58,26.41-13.66,2.6-1.73,4.85-2.6,6.76-2.6,2.95,0,5.55,1.65,7.8,4.94l33.04,47.09c1.73,2.43,2.6,4.77,2.6,7.02s-1.04,4.34-3.12,6.24c-14.4,11.45-30.7,20.29-48.91,26.54-18.21,6.24-37.9,9.37-59.05,9.37-30.87,0-58.66-7.33-83.38-21.98Z" />
+                  <path d="M1327.69,715.75c17.52,10.84,31.04,26.97,40.58,48.39,9.54,21.42,14.31,47.57,14.31,78.44v169.1c0,6.94-3.47,10.41-10.41,10.41h-67.64c-6.94,0-10.41-3.47-10.41-10.41v-165.98c0-19.42-4.51-34.73-13.53-45.92-9.02-11.19-21.94-16.78-38.76-16.78-10.76,0-20.42,2.73-29.01,8.19-8.58,5.46-15.48,12.71-20.68,21.72-5.2,9.02-8.24,18.82-9.11,29.4v169.36c0,6.94-3.47,10.41-10.41,10.41h-67.64c-6.94,0-10.41-3.47-10.41-10.41v-165.98c0-19.42-4.51-34.73-13.53-45.92-9.02-11.19-21.94-16.78-38.76-16.78-11.45,0-21.64,3.08-30.57,9.24-8.93,6.16-15.91,14.27-20.94,24.32-5.03,10.06-7.54,20.73-7.54,32v163.11c0,6.94-3.47,10.41-10.41,10.41h-67.64c-6.94,0-10.41-3.47-10.41-10.41v-293.97c0-6.93,3.47-10.41,10.41-10.41h51.77c2.95,0,5.37.65,7.28,1.95,1.91,1.3,3.47,3.34,4.68,6.11l6.76,16.39c12.31-10.41,26.1-18.38,41.36-23.93,15.26-5.55,31.65-8.32,49.17-8.32,20.46,0,38.67,4.08,54.63,12.23,15.95,8.15,28.96,20.12,39.02,35.9,12.83-15.43,28.31-27.32,46.44-35.64,18.12-8.33,37.94-12.49,59.44-12.49,23.76,0,44.4,5.42,61.92,16.26Z" />
+                </g>
+              </svg>
             </Link>
           </div>
 
@@ -28,22 +37,34 @@ export default function Footer() {
               <h3 className="text-sm font-semibold text-gray-900 mb-1">ACM</h3>
               <ul>
                 <li>
-                  <Link href="/whatwedo" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/about"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     What We Do
                   </Link>
                 </li>
                 <li>
-                  <Link href="/meetus" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/meetus"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     Meet Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/join" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/join"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     Join Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/events" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/events"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     Events
                   </Link>
                 </li>
@@ -52,42 +73,64 @@ export default function Footer() {
 
             {/* Committees Column */}
             <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-1">Committees</h3>
+              <h3 className="text-sm font-semibold text-gray-900 mb-1">
+                Committees
+              </h3>
               <ul>
                 <li>
-                  <Link href="/devpsu" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/explore"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     acm.explore
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mlpsu" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/ai"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     acm.ai
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mlpsu" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/web"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     acm.web
                   </Link>
-                </li>      
+                </li>
               </ul>
             </div>
 
             {/* Resources Column */}
             <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-1">Resources</h3>
+              <h3 className="text-sm font-semibold text-gray-900 mb-1">
+                Resources
+              </h3>
               <ul>
                 <li>
-                  <Link href="/sponsors" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/sponsors"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     Our Sponsors
                   </Link>
                 </li>
                 <li>
-                  <Link href="/friends" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/friends"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     Our Friends
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="text-sm text-gray-500 hover:text-gray-900">
+                  <Link
+                    href="/contact"
+                    className="text-sm text-gray-500 hover:text-gray-900"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -98,51 +141,91 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="mt-12 border-t pt-8 flex items-center justify-between">
-          <p className="text-xs text-gray-500">© {new Date().getFullYear()} PSU ACM</p>
-          
+          <p className="text-xs text-gray-500">
+            © {new Date().getFullYear()} PSU ACM
+          </p>
+
           {/* Social Links */}
           <div className="flex space-x-6">
-            <Link href="https://www.linkedin.com/company/association-for-computing-machinery-penn-state0/posts/?feedView=all" className="text-gray-400 hover:text-gray-500">
+            <Link
+              href="https://www.linkedin.com/company/association-for-computing-machinery-penn-state0/posts/?feedView=all"
+              className="text-gray-400 hover:text-gray-500"
+            >
               <span className="sr-only">LinkedIn</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" id="linkedin">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                id="linkedin"
+              >
                 <path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"></path>
-                </svg>
+              </svg>
             </Link>
 
-            <Link href="https://discord.gg/kESvzTwbcc" className="text-gray-400 hover:text-gray-500">
+            <Link
+              href="https://discord.gg/kESvzTwbcc"
+              className="text-gray-400 hover:text-gray-500"
+            >
               <span className="sr-only">Discord</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" enable-background="new 0 0 100 100" viewBox="0 0 100 100" id="discord">
-                <path id="Layer_2" d="M85.778,24.561c-11.641-8.71-22.793-8.466-22.793-8.466s-1.14,1.302-1.14,1.302c13.839,4.152,20.27,10.257,20.27,10.257
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 100 100"
+                id="discord"
+              >
+                <path
+                  id="Layer_2"
+                  d="M85.778,24.561c-11.641-8.71-22.793-8.466-22.793-8.466s-1.14,1.302-1.14,1.302c13.839,4.152,20.27,10.257,20.27,10.257
                         c-19.799-10.901-45.019-10.823-65.613,0c0,0,6.675-6.431,21.328-10.583c0,0-0.814-0.977-0.814-0.977s-11.071-0.244-22.793,8.466
                         c0,0-11.722,21.084-11.722,47.052c0,0,6.838,11.722,24.829,12.292c0,0,3.012-3.582,5.454-6.675
                         c-10.339-3.093-14.246-9.524-14.246-9.524c6.495,4.064,13.063,6.608,21.247,8.222c13.316,2.741,29.879-0.077,42.249-8.222
                         c0,0-4.07,6.594-14.734,9.606c2.442,3.012,5.373,6.512,5.373,6.512C90.662,83.254,97.5,71.532,97.5,71.613
                         C97.5,45.645,85.778,24.561,85.778,24.561z M34.818,64.043c-4.559,0-8.303-3.989-8.303-8.955c0.333-11.892,16.357-11.855,16.607,0
                         C43.121,60.054,39.458,64.043,34.818,64.043z M64.531,64.043c-4.559,0-8.303-3.989-8.303-8.955c0.366-11.869,16.19-11.874,16.607,0
-                        C72.834,60.054,69.171,64.043,64.531,64.043z"></path>
-                </svg>
+                        C72.834,60.054,69.171,64.043,64.531,64.043z"
+                ></path>
+              </svg>
             </Link>
 
-            <Link href="https://www.instagram.com/psu.acm/?hl=en" className="text-gray-400 hover:text-gray-500">
+            <Link
+              href="https://www.instagram.com/psu.acm/?hl=en"
+              className="text-gray-400 hover:text-gray-500"
+            >
               <span className="sr-only">Instagram</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 2476 2476" id="instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 2476 2476"
+                id="instagram"
+              >
                 <path d="M825.4 1238c0-227.9 184.7-412.7 412.6-412.7 227.9 0 412.7 184.8 412.7 412.7 0 227.9-184.8 412.7-412.7 412.7-227.9 0-412.6-184.8-412.6-412.7m-223.1 0c0 351.1 284.6 635.7 635.7 635.7s635.7-284.6 635.7-635.7-284.6-635.7-635.7-635.7S602.3 886.9 602.3 1238m1148-660.9c0 82 66.5 148.6 148.6 148.6 82 0 148.6-66.6 148.6-148.6s-66.5-148.5-148.6-148.5-148.6 66.5-148.6 148.5M737.8 2245.7c-120.7-5.5-186.3-25.6-229.9-42.6-57.8-22.5-99-49.3-142.4-92.6-43.3-43.3-70.2-84.5-92.6-142.3-17-43.6-37.1-109.2-42.6-229.9-6-130.5-7.2-169.7-7.2-500.3s1.3-369.7 7.2-500.3c5.5-120.7 25.7-186.2 42.6-229.9 22.5-57.8 49.3-99 92.6-142.4 43.3-43.3 84.5-70.2 142.4-92.6 43.6-17 109.2-37.1 229.9-42.6 130.5-6 169.7-7.2 500.2-7.2 330.6 0 369.7 1.3 500.3 7.2 120.7 5.5 186.2 25.7 229.9 42.6 57.8 22.4 99 49.3 142.4 92.6 43.3 43.3 70.1 84.6 92.6 142.4 17 43.6 37.1 109.2 42.6 229.9 6 130.6 7.2 169.7 7.2 500.3 0 330.5-1.2 369.7-7.2 500.3-5.5 120.7-25.7 186.3-42.6 229.9-22.5 57.8-49.3 99-92.6 142.3-43.3 43.3-84.6 70.1-142.4 92.6-43.6 17-109.2 37.1-229.9 42.6-130.5 6-169.7 7.2-500.3 7.2-330.5 0-369.7-1.2-500.2-7.2M727.6 7.5c-131.8 6-221.8 26.9-300.5 57.5-81.4 31.6-150.4 74-219.3 142.8C139 276.6 96.6 345.6 65 427.1 34.4 505.8 13.5 595.8 7.5 727.6 1.4 859.6 0 901.8 0 1238s1.4 378.4 7.5 510.4c6 131.8 26.9 221.8 57.5 300.5 31.6 81.4 73.9 150.5 142.8 219.3 68.8 68.8 137.8 111.1 219.3 142.8 78.8 30.6 168.7 51.5 300.5 57.5 132.1 6 174.2 7.5 510.4 7.5 336.3 0 378.4-1.4 510.4-7.5 131.8-6 221.8-26.9 300.5-57.5 81.4-31.7 150.4-74 219.3-142.8 68.8-68.8 111.1-137.9 142.8-219.3 30.6-78.7 51.6-168.7 57.5-300.5 6-132.1 7.4-174.2 7.4-510.4s-1.4-378.4-7.4-510.4c-6-131.8-26.9-221.8-57.5-300.5-31.7-81.4-74-150.4-142.8-219.3C2199.4 139 2130.3 96.6 2049 65c-78.8-30.6-168.8-51.6-300.5-57.5-132-6-174.2-7.5-510.4-7.5-336.3 0-378.4 1.4-510.5 7.5"></path>
-            </svg>
-
+              </svg>
             </Link>
 
-            <Link href="https://groupme.com/join_group/105326747/CSj2fp99" className="text-gray-400 hover:text-gray-500">
+            <Link
+              href="https://groupme.com/join_group/105326747/CSj2fp99"
+              className="text-gray-400 hover:text-gray-500"
+            >
               <span className="sr-only">GroupMe</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32" id="groupme">
-            <g>
-                <path d="M24 2H8a5 5 0 0 0-5 5v13a5 5 0 0 0 5 5h3.44l3.79 4.63a1 1 0 0 0 1.54 0L20.56 25H24a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5Zm3 18a3 3 0 0 1-3 3h-3.91a1 1 0 0 0-.77.37L16 27.42l-3.32-4.05a1 1 0 0 0-.77-.37H8a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h16a3 3 0 0 1 3 3Z"></path>
-                <path d="M19.2 17.4a4 4 0 0 1-6.4 0 1 1 0 1 0-1.6 1.2 6 6 0 0 0 9.6 0 1 1 0 0 0-1.6-1.2zM12.5 12a1 1 0 0 0 0 2h.5v.5a1 1 0 0 0 2 0V14h2v.5a1 1 0 0 0 2 0V14h.5a1 1 0 0 0 0-2H19v-2h.5a1 1 0 0 0 0-2H19v-.5a1 1 0 0 0-2 0V8h-2v-.5a1 1 0 0 0-2 0V8h-.5a1 1 0 0 0 0 2h.5v2zm2.5-2h2v2h-2z"></path>
-            </g>
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 32 32"
+                id="groupme"
+              >
+                <g>
+                  <path d="M24 2H8a5 5 0 0 0-5 5v13a5 5 0 0 0 5 5h3.44l3.79 4.63a1 1 0 0 0 1.54 0L20.56 25H24a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5Zm3 18a3 3 0 0 1-3 3h-3.91a1 1 0 0 0-.77.37L16 27.42l-3.32-4.05a1 1 0 0 0-.77-.37H8a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h16a3 3 0 0 1 3 3Z"></path>
+                  <path d="M19.2 17.4a4 4 0 0 1-6.4 0 1 1 0 1 0-1.6 1.2 6 6 0 0 0 9.6 0 1 1 0 0 0-1.6-1.2zM12.5 12a1 1 0 0 0 0 2h.5v.5a1 1 0 0 0 2 0V14h2v.5a1 1 0 0 0 2 0V14h.5a1 1 0 0 0 0-2H19v-2h.5a1 1 0 0 0 0-2H19v-.5a1 1 0 0 0-2 0V8h-2v-.5a1 1 0 0 0-2 0V8h-.5a1 1 0 0 0 0 2h.5v2zm2.5-2h2v2h-2z"></path>
+                </g>
+              </svg>
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
