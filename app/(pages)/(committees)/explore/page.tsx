@@ -7,33 +7,14 @@ import Sponsors from "@/app/components/Sponsors";
 import { ContainerScroll } from "@/app/components/ui/container-scroll-animation";
 import { EventCards } from "@/app/components/EventCards";
 import { HoverBorderGradient } from "@/app/components/ui/hover-border-gradient";
+import clubPartnersData from "@/app/data/clubs.json";
 
-const clubLogos = [
-    {
-      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq7m7dz3X3ncYTE2dJVXLq8DSBIN1ZWgwtlGxH",
-      alt: "HackPSU Logo",
-      width: 150,
-      height: 100,
-    },
-    {
-      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqyWLnIcGrZOdU2M0i7el6JSqXHm4g9Qa3L5KN",
-      alt: "IEEE Logo",
-      width: 150,
-      height: 100,
-    },
-    {
-      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqXoP5XF1xxJ0aTsvkt5HpWQCwbNgVflA3hPm7",
-      alt: "AWC Logo",
-      width: 150,
-      height: 100,
-    },
-    {
-      src: "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq4sSXFtZw5hjoXscQzBHuDLNAxZPWkv7pY9OF",
-      alt: "Nittany AI Student Society Logo",
-      width: 150,
-      height: 100,
-    }
-  ];
+const clubLogos = clubPartnersData.clubPartners.map((partner) => ({
+  src: partner.logoPath,
+  alt: `${partner.name} Logo`,
+  width: 150,
+  height: 100,
+}));
 
 export default function ACMExplore() {
   return (
