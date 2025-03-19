@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -24,24 +24,24 @@ const poppins = Poppins({
   weight: ["400", "500", "700"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "Penn State ACM",
   description: "Penn State ACM is the student chapter of the Association for Computing Machinery at Penn State University.",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${poppins.variable} antialiased`}
-      >
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${poppins.variable} min-h-screen antialiased`}>
         {children}
       </body>
     </html>

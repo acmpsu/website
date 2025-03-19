@@ -16,6 +16,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/app/components/ui/navigation-menu"
+import { type Route } from 'next';
 
 interface ListItemProps extends Omit<React.ComponentPropsWithoutRef<"a">, "title"> {
   className?: string;
@@ -55,7 +56,7 @@ export default function Navigation() {
 
   return (
     <div className="max-w-7xl px-4 flex items-center mt-5 mx-auto justify-between relative z-50 pb-4 border-b border-gray-200">
-      <a href="/" className="mr-12">
+      <Link href={'/' as Route} className="mr-12">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1562.98 1749.08" className="w-14 h-14">
           <path 
             fill="#2a3e77" 
@@ -67,14 +68,14 @@ export default function Navigation() {
             <path d="M1327.69,715.75c17.52,10.84,31.04,26.97,40.58,48.39,9.54,21.42,14.31,47.57,14.31,78.44v169.1c0,6.94-3.47,10.41-10.41,10.41h-67.64c-6.94,0-10.41-3.47-10.41-10.41v-165.98c0-19.42-4.51-34.73-13.53-45.92-9.02-11.19-21.94-16.78-38.76-16.78-10.76,0-20.42,2.73-29.01,8.19-8.58,5.46-15.48,12.71-20.68,21.72-5.2,9.02-8.24,18.82-9.11,29.4v169.36c0,6.94-3.47,10.41-10.41,10.41h-67.64c-6.94,0-10.41-3.47-10.41-10.41v-165.98c0-19.42-4.51-34.73-13.53-45.92-9.02-11.19-21.94-16.78-38.76-16.78-11.45,0-21.64,3.08-30.57,9.24-8.93,6.16-15.91,14.27-20.94,24.32-5.03,10.06-7.54,20.73-7.54,32v163.11c0,6.94-3.47,10.41-10.41,10.41h-67.64c-6.94,0-10.41-3.47-10.41-10.41v-293.97c0-6.93,3.47-10.41,10.41-10.41h51.77c2.95,0,5.37.65,7.28,1.95,1.91,1.3,3.47,3.34,4.68,6.11l6.76,16.39c12.31-10.41,26.1-18.38,41.36-23.93,15.26-5.55,31.65-8.32,49.17-8.32,20.46,0,38.67,4.08,54.63,12.23,15.95,8.15,28.96,20.12,39.02,35.9,12.83-15.43,28.31-27.32,46.44-35.64,18.12-8.33,37.94-12.49,59.44-12.49,23.76,0,44.4,5.42,61.92,16.26Z"/>
           </g>
         </svg>
-      </a>
+      </Link>
 
       {/* Desktop Navigation */}
       <div className="hidden font-roboto md:block flex-grow">
         <NavigationMenu>
           <NavigationMenuList className="gap-4">
             <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
+              <Link href={'/about' as Route} legacyBehavior passHref>
                 <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-md`}>
                   About
                 </NavigationMenuLink>
@@ -82,7 +83,7 @@ export default function Navigation() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link href="/meetus" legacyBehavior passHref>
+              <Link href={'/meetus' as Route} legacyBehavior passHref>
                 <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-md`}>
                   Meet Us
                 </NavigationMenuLink>
@@ -97,7 +98,7 @@ export default function Navigation() {
                     <NavigationMenuLink asChild>
                       <a
                         className="flex h-full w-full hover:bg-gray-100 border border-gray-200 select-none flex-col justify-start rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                        href="/events"
+                        href={'/events' as Route}
                       >
                         <div className="mb-2 text-lg font-medium">
                           Events
@@ -108,10 +109,10 @@ export default function Navigation() {
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="/explore" className="hover:bg-gray-100 h-full" title="acm.explore" titleSvg="/acm.explore.svg" logo="/explore-icon.svg">
+                  <ListItem href={'/explore' as Route} className="hover:bg-gray-100 h-full" title="acm.explore" titleSvg="/acm.explore.svg" logo="/explore-icon.svg">
                     Learn a vast array of topics in computer science.
                   </ListItem>
-                  <ListItem href="/ai" className="hover:bg-gray-100 h-full" title="acm.ai" titleSvg="/acm.ai.svg" logo="/ai-icon.svg">
+                  <ListItem href={'/ai' as Route} className="hover:bg-gray-100 h-full" title="acm.ai" titleSvg="/acm.ai.svg" logo="/ai-icon.svg">
                     Learn AI/ML fundamentals, build models, and solve problems.
                   </ListItem>
                   <div className="relative">
@@ -123,7 +124,7 @@ export default function Navigation() {
                       titleSvg="/acm.web.svg" 
                       logo="/web-icon.svg"
                       title="acm.web"
-                      href={""}
+                      href={'/web' as Route}
                     >
                       Learn how to build websites and web applications.
                     </ListItem>
@@ -136,13 +137,13 @@ export default function Navigation() {
               <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
               <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
-                  <ListItem href="/sponsors" className="hover:bg-gray-100 h-full" title="Our Sponsors">
+                  <ListItem href={'/sponsors' as Route} className="hover:bg-gray-100 h-full" title="Our Sponsors">
                     View our current sponsors and learn about partnership opportunities.
                   </ListItem>
-                  <ListItem href="/friends" className="hover:bg-gray-100 h-full" title="Our Friends">
+                  <ListItem href={'/friends' as Route} className="hover:bg-gray-100 h-full" title="Our Friends">
                     View our club friends.
                   </ListItem>
-                  <ListItem href="/contact" className="hover:bg-gray-100 h-full" title="Contact Us">
+                  <ListItem href={'/contact' as Route} className="hover:bg-gray-100 h-full" title="Contact Us">
                     Get in touch with PSU ACM leadership.
                   </ListItem>
                 </ul>
@@ -154,7 +155,7 @@ export default function Navigation() {
 
       {/* Desktop Join Button */}
       <div className="hidden md:block ml-12">
-        <Link href="/join">
+        <Link href={'/join' as Route}>
           <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
@@ -201,10 +202,10 @@ export default function Navigation() {
           <div className="absolute right-0 top-full mt-2 w-screen max-w-[300px] bg-white shadow-lg rounded-lg overflow-hidden border">
             <div className="max-h-[80vh] overflow-y-auto">
               <div className="p-4 space-y-2">
-                <Link href="/about" className="block p-2 hover:bg-gray-100 rounded">
+                <Link href={'/about' as Route} className="block p-2 hover:bg-gray-100 rounded">
                   About
                 </Link>
-                <Link href="/meetus" className="block p-2 hover:bg-gray-100 rounded">
+                <Link href={'/meetus' as Route} className="block p-2 hover:bg-gray-100 rounded">
                   Meet Us
                 </Link>
                 
@@ -234,13 +235,13 @@ export default function Navigation() {
                   
                   {isCommitteesOpen && (
                     <div className="pl-4 space-y-2 mt-2">
-                      <Link href="/events" className="block p-2 hover:bg-gray-100 rounded">
+                      <Link href={'/events' as Route} className="block p-2 hover:bg-gray-100 rounded">
                         <div>
                           <div className="font-bold">Events</div>
                           <div className="text-sm text-gray-500">View the schedule of events for the semester.</div>
                         </div>
                       </Link>
-                      <Link href="/explore" className="block p-2 hover:bg-gray-100 rounded">
+                      <Link href={'/explore' as Route} className="block p-2 hover:bg-gray-100 rounded">
                         <div className="flex items-center gap-2">
                           <Image src="/explore-icon.svg" alt="acm.explore" width={40} height={40} />
                           <div>
@@ -249,7 +250,7 @@ export default function Navigation() {
                           </div>
                         </div>
                       </Link>
-                      <Link href="/ai" className="block p-2 hover:bg-gray-100 rounded">
+                      <Link href={'/ai' as Route} className="block p-2 hover:bg-gray-100 rounded">
                         <div className="flex items-center gap-2">
                           <Image src="/ai-icon.svg" alt="acm.ai" width={40} height={40} />
                           <div>
@@ -262,7 +263,7 @@ export default function Navigation() {
                         <div className="absolute inset-0 backdrop-blur-[1px] z-10 flex items-center justify-center">
                           <span className="bg-gray-200 text-black px-3 py-1 rounded-full font-medium">Coming Soon</span>
                         </div>
-                        <Link href="" className="block p-2 opacity-60">
+                        <Link href={'/web' as Route} className="block p-2 opacity-60">
                           <div className="flex items-center gap-2">
                             <Image src="/web-icon.svg" alt="acm.web" width={40} height={40} />
                             <div>
@@ -302,19 +303,19 @@ export default function Navigation() {
                   
                   {isResourcesOpen && (
                     <div className="pl-4 space-y-2 mt-2">
-                      <Link href="/sponsors" className="block p-2 hover:bg-gray-100 rounded">
+                      <Link href={'/sponsors' as Route} className="block p-2 hover:bg-gray-100 rounded">
                         <div>
                           <div className="font-bold">Our Sponsors</div>
                           <div className="text-sm text-gray-500">View our current sponsors and learn about partnership opportunities.</div>
                         </div>
                       </Link>
-                      <Link href="/friends" className="block p-2 hover:bg-gray-100 rounded">
+                      <Link href={'/friends' as Route} className="block p-2 hover:bg-gray-100 rounded">
                         <div>
                           <div className="font-bold">Our Friends</div>
                           <div className="text-sm text-gray-500">View our club friends.</div>
                         </div>
                       </Link>
-                      <Link href="/contact" className="block p-2 hover:bg-gray-100 rounded">
+                      <Link href={'/contact' as Route} className="block p-2 hover:bg-gray-100 rounded">
                         <div>
                           <div className="font-bold">Contact Us</div>
                           <div className="text-sm text-gray-500">Get in touch with PSU ACM leadership.</div>
@@ -324,7 +325,7 @@ export default function Navigation() {
                   )}
                 </div>
 
-                <Link href="/join" className="block mt-4">
+                <Link href={'/join' as Route} className="block mt-4">
                   <Button className="w-full bg-blue-500 text-white hover:bg-blue-600">
                     Join Us
                   </Button>

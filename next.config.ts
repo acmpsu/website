@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  reactStrictMode: true,
   output: 'standalone',
   images: {
     unoptimized: true,
-    domains: ['website-3zn2r3ppd-david-youms-projects.vercel.app'],
+    domains: ['website-3zn2r3ppd-david-youms-projects.vercel.app', 'aqe6lvxoos.ufs.sh'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -14,6 +15,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    typedRoutes: true
+  }
 };
 
 export default nextConfig;
