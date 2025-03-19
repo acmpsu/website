@@ -3,7 +3,9 @@
 import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
-import { clubPartners } from "@/app/data/clubs.json";
+import clubPartnersData from "@/app/data/clubs.json";
+
+const { clubPartners } = clubPartnersData;
 
 export default function Friends() {
   return (

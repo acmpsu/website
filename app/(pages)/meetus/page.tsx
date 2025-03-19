@@ -2,7 +2,9 @@ import Image from "next/image";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import TeamSection from "../../components/TeamSection";
-import { executiveBoard, captains } from "@/app/data/team.json";
+import teamData from "@/app/data/team.json";
+
+const { executiveBoard, captains } = teamData;
 
 export default function MeetUs() {
   return (

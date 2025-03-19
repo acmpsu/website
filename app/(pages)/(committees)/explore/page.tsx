@@ -262,8 +262,23 @@ export default function ACMExplore() {
         </div>
 
         <div className="w-3/4 mx-auto">
-          <EventCards committee="explore" textColor="text-black" />
+          <EventCards committee="explore" maxCards={3} textColor="text-black"/>
         </div>
+
+        {/* View All Events Button */}
+        <div className="flex justify-center mt-10">
+          <a href="/events">
+          <HoverBorderGradient
+            primaryColor="#00873E"
+            secondaryColor="#34D399"
+            containerClassName="rounded-full"
+            as="button"
+            className="bg-white text-black flex items-center space-x-2 dark:bg-black dark:text-white"
+          >
+            <span>View All Events</span>
+          </HoverBorderGradient>
+        </a>
+      </div>
       </div>
 
       <Sponsors

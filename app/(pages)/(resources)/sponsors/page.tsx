@@ -3,7 +3,7 @@
 import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
-import { sponsors } from "@/app/data/sponsors.json";
+import sponsorsData from "@/app/data/sponsors.json";
 
 import {
     Accordion,
@@ -11,6 +11,8 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/app/components/ui/accordion"
+
+const { sponsors } = sponsorsData;
 
 export default function Sponsors() {
   return (
