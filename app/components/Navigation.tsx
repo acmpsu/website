@@ -124,7 +124,7 @@ export default function Navigation() {
                       titleSvg="/acm.web.svg" 
                       logo="/web-icon.svg"
                       title="acm.web"
-                      href={'/web' as Route}
+                      href={"" as Route}
                     >
                       Learn how to build websites and web applications.
                     </ListItem>
@@ -263,7 +263,7 @@ export default function Navigation() {
                         <div className="absolute inset-0 backdrop-blur-[1px] z-10 flex items-center justify-center">
                           <span className="bg-gray-200 text-black px-3 py-1 rounded-full font-medium">Coming Soon</span>
                         </div>
-                        <Link href={'/web' as Route} className="block p-2 opacity-60">
+                        <Link href={"" as Route} className="block p-2 opacity-60">
                           <div className="flex items-center gap-2">
                             <Image src="/web-icon.svg" alt="acm.web" width={40} height={40} />
                             <div>
