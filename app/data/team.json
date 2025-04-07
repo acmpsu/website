@@ -8,20 +8,20 @@
         "linkedin": "https://linkedin.com/in/johndoe"
       },
       "quote": {
-        "text": "Placeholder",
-        "attribution": ""
+        "text": "\"Clean code does one thing well.\"",
+        "attribution": "— Bjarne Stroustrup"
       }
     },
     {
       "name": "Sainath Nair",
       "role": "Vice President",
-      "image": "/headshots/placeholder.png",
+      "image": "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq8zx67rsjTak2ugexm9XtlK3oJMvcwQDiPI1H",
       "links": {
         "linkedin": "https://www.linkedin.com/in/sainathrnair/"
       },
       "quote": {
-        "text": "Placeholder",
-        "attribution": ""
+        "text": "\"In the end we only regret the chances we didn’t take.\"",
+        "attribution": "— Lewis Carroll"
       }
     },
     {
@@ -40,7 +40,7 @@
     {
       "name": "Julian Gavino",
       "role": "AI Director",
-      "image": "/headshots/placeholder.png",
+      "image": "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqhhahWGbsm3vazL6F8ZWeYXHByrSAQJn4foqV",
       "links": {
         "linkedin": "https://www.linkedin.com/in/julian-gavino-72371822a/"
       },
@@ -80,7 +80,7 @@
       "image": "/headshots/sinjoysaha.jpg",
       "links": {
         "linkedin": "https://www.linkedin.com/in/sinjoysaha/",
-        "github": "https://github.com/sinjoy-saha",
+        "github": "https://github.com/sinjoysaha",
         "link": "https://sinjoysaha.github.io/"
       },
       "quote": {
@@ -96,8 +96,8 @@
         "linkedin": "https://www.linkedin.com/in/matthew-gurer/"
       },
       "quote": {
-        "text": "Placeholder",
-        "attribution": ""
+        "text": "\"Think long term. Execute short term. Experience now.\"",
+        "attribution": "— The Stoic Emperor"
       }
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Tife Akintan",
       "role": "Explore Captain",
-      "image": "/headshots/placeholder.png",
+      "image": "https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqr0tS4sORheZvUAVWtYoO4CrJm97sI8f3lSqj",
       "links": {
         "linkedin": "https://linkedin.com/in/johndoe"
       },
       "quote": {
-        "text": "Placeholder",
-        "attribution": ""
+        "text": "\"Yuhh Boi\"",
+        "attribution": "— Tife Akintan"
       }
     },
     {

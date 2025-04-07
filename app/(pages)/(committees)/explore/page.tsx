@@ -51,7 +51,7 @@ export default function ACMExplore() {
             }
           >
             <Image
-              src={`/carousel-pictures/4.jpg`}
+              src={`https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqIwqZByzJURCnyWS7Qjbm6sMoLBa5lgkc3Izv`}
               alt="hero"
               height={720}
               width={1400}
@@ -104,7 +104,7 @@ export default function ACMExplore() {
                 />
               </div>
               <Image
-                src="/headshots/placeholder.png"
+                src="/headshots/dylanmcdonnell.jpg"
                 alt="Explore Director"
                 width={150}
                 height={150}
@@ -217,7 +217,7 @@ export default function ACMExplore() {
                   />
                 </div>
                 <Image
-                  src="/headshots/placeholder.png"
+                  src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqr0tS4sORheZvUAVWtYoO4CrJm97sI8f3lSqj"
                   alt="Explore Captain"
                   width={150}
                   height={150}
@@ -277,7 +277,7 @@ export default function ACMExplore() {
               <div className="aspect-video bg-gray-200">
                 <div className="w-full h-full flex items-center justify-center border-2 border-green-600 rounded-lg p-2 aspect-video">
                   <Image
-                    src="/carousel-pictures/4.jpg"
+                    src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqIwqZByzJURCnyWS7Qjbm6sMoLBa5lgkc3Izv"
                     alt="Workshop"
                     width={1000}
                     height={1000}
@@ -316,7 +316,7 @@ export default function ACMExplore() {
               <div className="aspect-video bg-gray-200">
                 <div className="w-full h-full flex items-center justify-center border-2 border-green-600 rounded-lg p-2 aspect-video">
                   <Image
-                    src="/carousel-pictures/3.jpg"
+                    src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqirWUGeXI03Y1wSV4TmZnWqFLHcgvzhklEB5K"
                     alt="Workshop"
                     width={1000}
                     height={1000}
@@ -334,7 +334,7 @@ export default function ACMExplore() {
             <div className="inline-block rounded-lg shadow-md overflow-hidden">
               <div className="w-full h-full flex items-center justify-center border-2 border-green-600 rounded-lg p-2 aspect-video">
                 <Image
-                  src="/carousel-pictures/2.jpg"
+                  src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqBevgih2UsImS9Y4WEDHZ0ngwxzNAd5tb6kqV"
                   alt="Project Team"
                   width={600}
                   height={400}

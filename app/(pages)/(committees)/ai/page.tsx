@@ -72,7 +72,7 @@ export default function ACMAI() {
             }
           >
             <Image
-              src={`/carousel-pictures/4.jpg`}
+              src={`https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqqeKiymmJTXBfrCcgGiopWkjNbZd42yRsFQDw`}
               alt="hero"
               height={720}
               width={1400}
@@ -88,13 +88,86 @@ export default function ACMAI() {
       <div className="w-full">
         <div className="max-w-3xl mx-auto text-center pt-20 pb-20 space-y-16"> 
           <h2 className="text-5xl text-black flex items-center justify-center gap-4 font-geistSans font-medium mb-4">
-            What is acm.ai
+            What is
+            <Image
+              src="/acm.ai.svg"
+              alt="AI Words"
+              width={300}
+              height={100}
+              className="w-[170px] h-auto"
+            />
           </h2>
           <p className="text-gray-700 ml-4 mr-4 font-geistSans text-lg leading-relaxed">
             acm.ai is our artificial intelligence and machine learning focused committee. 
             We focus on teaching fundamental concepts in AI/ML, working on practical projects,
             and exploring cutting-edge developments in the field.
           </p>
+        </div>
+      </div>
+
+      <div className="w-full px-2 py-20 relative overflow-hidden">
+        <div className="max-w-6xl text-center mx-auto space-y-16 relative">
+          <h2 className="text-3xl  font-geistSans font-medium mb-12">
+            Meet The Team
+          </h2>
+
+          {/* Director */}
+          <div className="flex flex-col items-center mb-10">
+            <div className="relative">
+              <div className="absolute -top-4 -left-4 w-12 h-12 z-10">
+                <Image
+                  src="/ai-icon.svg"
+                  alt="AI Director Badge"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <Image
+                src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqhhahWGbsm3vazL6F8ZWeYXHByrSAQJn4foqV"
+                alt="AI Director"
+                width={150}
+                height={150}
+                className="rounded-lg mb-4"
+              />
+            </div>
+            <h3 className="text-2xl font-poppins font-medium mb-2">
+              Dylan McDonnell
+            </h3>
+            <p className="text-blue-600 font-geistSans mb-4">
+              Explore Director
+            </p>
+          </div>
+          {/* Captains Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2 place-items-center">
+            {/* Captain 1 */}
+            <div className="flex flex-col items-center">
+              <div className="relative">
+                <div className="absolute -top-4 -left-4 w-12 h-12 z-10">
+                  <Image
+                    src="/ai-icon.svg"
+                    alt="Captain Badge"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <Image
+                  src="/headshots/wyattpetula.jpg"
+                  alt="Explore Captain"
+                  width={150}
+                  height={150}
+                  className="rounded-lg mb-4"
+                />
+              </div>
+              <h3 className="text-xl font-poppins font-medium mb-2">
+                Arnav Mehta
+              </h3>
+              <p className="text-blue-600 font-geistSans mb-4">
+                AI Captain
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -132,7 +205,7 @@ export default function ACMAI() {
               <div className="aspect-video bg-gray-200">
                 {/* Replace with actual image */}
                 <div className="w-full h-full flex items-center justify-center border-2 border-blue-600 rounded-lg p-2 aspect-video">
-                  <Image src="/carousel-pictures/4.jpg" alt="Workshop" width={1000} height={1000} className="rounded-lg w-full h-full object-cover" />
+                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqIwqZByzJURCnyWS7Qjbm6sMoLBa5lgkc3Izv" alt="Workshop" width={1000} height={1000} className="rounded-lg w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -158,7 +231,7 @@ export default function ACMAI() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="aspect-video bg-gray-200">
                 <div className="w-full h-full flex items-center justify-center border-2 border-blue-600 rounded-lg p-2 aspect-video">
-                  <Image src="/carousel-pictures/3.jpg" alt="Workshop" width={1000} height={1000} className="rounded-lg w-full h-full object-cover" />
+                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqirWUGeXI03Y1wSV4TmZnWqFLHcgvzhklEB5K" alt="Workshop" width={1000} height={1000} className="rounded-lg w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -171,7 +244,7 @@ export default function ACMAI() {
             <div className="inline-block rounded-lg shadow-md overflow-hidden">
               <div className="w-full h-full flex items-center justify-center border-2 border-blue-600 rounded-lg p-2 aspect-video">
                 <Image
-                  src="/carousel-pictures/2.jpg"
+                  src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqBevgih2UsImS9Y4WEDHZ0ngwxzNAd5tb6kqV"
                   alt="Project Team"
                   width={600}
                   height={400}

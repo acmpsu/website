@@ -1,5 +1,6 @@
 import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
+import Image from "next/image";
 
 export default function Activities() {
   return (
@@ -23,7 +24,13 @@ export default function Activities() {
               <div className="h-48 bg-gray-200 rounded-lg mb-4">
                 {/* Replace with actual image */}
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  Coding Workshop Image
+                  <Image 
+                    src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqXi5MPjxxJ0aTsvkt5HpWQCwbNgVflA3hPm7F" 
+                    alt="Coding" 
+                    width={500} 
+                    height={500}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
                 </div>
               </div>
               <h2 className="text-2xl font-bold mb-2">Technical Development</h2>
@@ -44,7 +51,7 @@ export default function Activities() {
               <div className="h-48 bg-gray-200 rounded-lg mb-4">
                 {/* Replace with actual image */}
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  Professional Event Image
+                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq4oTvFLZw5hjoXscQzBHuDLNAxZPWkv7pY9OF" alt="Coding" width={500} height={500} className="w-full h-full object-cover rounded-lg" />
                 </div>
               </div>
               <h2 className="text-2xl font-bold mb-2">Professional Growth</h2>
@@ -65,7 +72,7 @@ export default function Activities() {
               <div className="h-48 bg-gray-200 rounded-lg mb-4">
                 {/* Replace with actual image */}
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  Community Event Image
+                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq7M2nnccX3ncYTE2dJVXLq8DSBIN1ZWgwtlGx" alt="Coding" width={500} height={500} className="w-full h-full object-cover rounded-lg" />
                 </div>
               </div>
               <h2 className="text-2xl font-bold mb-2">Community Building</h2>
@@ -86,7 +93,7 @@ export default function Activities() {
               <div className="h-48 bg-gray-200 rounded-lg mb-4">
                 {/* Replace with actual image */}
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  Innovation Image
+                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqslvNhHL1yaME9CjZ3kDRv6zKpbTPIiWcsAL8" alt="Coding" width={500} height={500} className="w-full h-full object-cover rounded-lg" />
                 </div>
               </div>
               <h2 className="text-2xl font-bold mb-2">Innovation & Projects</h2>
