@@ -13,14 +13,15 @@ export default function Friends() {
       <Navigation />
       <div className="relative w-full h-[300px]">
         <div className="absolute inset-0 flex flex-col justify-center items-center text-black">
-          <div className="grid grid-cols-1 md:grid-cols-1 text-center items-center justify-items-center mb-4 mt-12">
-            <object 
-              data="/acm-logo.svg"
-              type="image/svg+xml"
-              className="object-contain"
-              width={100}
-            />
-            <span className="text-6xl">Club Relations</span>
+            <div className="flex flex-col items-center justify-center mt-12">
+              <Image 
+                src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqbHSGKW884S57TOCYvamZlLntqfxXHNU2dPcM"
+                alt="ACM Logo"
+                width={100}
+                height={100}
+                className="object-contain"
+              />
+            <div className="text-6xl">Sponsors</div>
           </div>
           <p className="text-lg text-center max-w-2xl px-4">
             We collaborate with various clubs and organizations at Penn State to create a stronger tech community.
