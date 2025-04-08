@@ -89,11 +89,9 @@ export default function ACMAI() {
         <div className="max-w-3xl mx-auto text-center pt-20 pb-20 space-y-16"> 
           <h2 className="text-5xl text-black flex items-center justify-center gap-4 font-geistSans font-medium mb-4">
             What is
-            <Image
-              src="/acm.ai.svg"
-              alt="AI Words"
-              width={300}
-              height={100}
+            <object
+              data="/acm.ai.svg"
+              type="image/svg+xml"
               className="w-[170px] h-auto"
             />
           </h2>

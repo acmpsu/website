@@ -20,16 +20,15 @@ export default function Sponsors() {
         <Navigation />
         <div className="relative w-full h-[300px] ">
             <div className="absolute inset-0 flex flex-col justify-center items-center text-black">
-            <div className="flex items-center gap-4 mb-4">
-                <Image 
-                src="/acm-logo.svg"
-                alt="ACM Logo"
-                width={100}
-                height={100}
-                className="object-contain"
-                />
-                <span className="text-6xl font-poppins">Sponsors</span>
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-1 text-center items-center justify-items-center mb-4 mt-12">
+            <object 
+              data="/acm-logo.svg"
+              type="image/svg+xml"
+              className="object-contain"
+              width={100}
+            />
+            <div className="text-6xl">Sponsors</div>
+          </div>
             <p className="text-lg text-center font-geistSans max-w-2xl px-4">
                 Our Sponsors help us grow the company and allow us to continue what we love most.
             </p>
