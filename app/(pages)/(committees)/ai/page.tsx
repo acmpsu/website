@@ -59,7 +59,7 @@ export default function ACMAI() {
                     <object
                       data="/acm.ai.svg"
                       type="image/svg+xml"
-                      className="w-[250px] h-auto"
+                      className="w-[120px] md:w-[250px] h-auto"
                     />
                   </div>
                   <p className="text-base font-geistSans md:text-lg text-gray-700 max-w-2xl mb-4 md:mb-8 px-4">
