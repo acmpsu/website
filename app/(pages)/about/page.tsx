@@ -25,13 +25,11 @@ export default function Activities() {
                 {/* Replace with actual image */}
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
                   <Image 
-                    src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqslvNhHL1yaME9CjZ3kDRv6zKpbTPIiWcsAL8" 
+                    src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqXi5MPjxxJ0aTsvkt5HpWQCwbNgVflA3hPm7F" 
                     alt="Coding" 
-                    width={1000} 
-                    height={1000}
+                    width={500} 
+                    height={500}
                     className="w-full h-full object-cover rounded-lg"
-                    priority
-                    quality={90}
                   />
                 </div>
               </div>

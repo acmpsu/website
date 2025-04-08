@@ -279,9 +279,10 @@ export default function ACMExplore() {
                   <Image
                     src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqIwqZByzJURCnyWS7Qjbm6sMoLBa5lgkc3Izv"
                     alt="Workshop"
-                    width={1000}
-                    height={1000}
+                    width={600}
+                    height={400}
                     className="rounded-lg w-full h-full object-cover"
+                    priority
                   />
                 </div>
               </div>
@@ -318,9 +319,10 @@ export default function ACMExplore() {
                   <Image
                     src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqirWUGeXI03Y1wSV4TmZnWqFLHcgvzhklEB5K"
                     alt="Workshop"
-                    width={1000}
-                    height={1000}
+                    width={600}
+                    height={400}
                     className="rounded-lg w-full h-full object-cover"
+                    priority
                   />
                 </div>
               </div>
@@ -339,6 +341,7 @@ export default function ACMExplore() {
                   width={600}
                   height={400}
                   className="rounded-lg w-full h-full object-cover"
+                  priority
                 />
               </div>
             </div>

@@ -203,7 +203,7 @@ export default function ACMAI() {
               <div className="aspect-video bg-gray-200">
                 {/* Replace with actual image */}
                 <div className="w-full h-full flex items-center justify-center border-2 border-blue-600 rounded-lg p-2 aspect-video">
-                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqIwqZByzJURCnyWS7Qjbm6sMoLBa5lgkc3Izv" alt="Workshop" width={1000} height={1000} className="rounded-lg w-full h-full object-cover" />
+                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqIwqZByzJURCnyWS7Qjbm6sMoLBa5lgkc3Izv" alt="Workshop" width={600} height={400} className="rounded-lg w-full h-full object-cover" priority />
                 </div>
               </div>
             </div>
@@ -229,7 +229,7 @@ export default function ACMAI() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="aspect-video bg-gray-200">
                 <div className="w-full h-full flex items-center justify-center border-2 border-blue-600 rounded-lg p-2 aspect-video">
-                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqirWUGeXI03Y1wSV4TmZnWqFLHcgvzhklEB5K" alt="Workshop" width={1000} height={1000} className="rounded-lg w-full h-full object-cover" />
+                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqirWUGeXI03Y1wSV4TmZnWqFLHcgvzhklEB5K" alt="Workshop" width={600} height={400} className="rounded-lg w-full h-full object-cover" priority />
                 </div>
               </div>
             </div>
@@ -247,6 +247,7 @@ export default function ACMAI() {
                   width={600}
                   height={400}
                   className="rounded-lg w-full h-full object-cover"
+                  priority
                 />
               </div>
             </div>
