@@ -198,13 +198,13 @@ export default function ACMAI() {
         <div className="flex max-w-6xl mx-auto flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="aspect-video bg-gray-200">
-                <Image 
-                  src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqIwqZByzJURCnyWS7Qjbm6sMoLBa5lgkc3Izv" 
-                  alt="Workshop" 
-                  width={1400}
-                  height={720}
-                  className="mx-auto rounded-2xl object-cover w-full h-[200px] sm:h-[350px] md:h-[400px] lg:h-[500px]"
+              <div className="w-full h-full flex items-center justify-center border-2 border-blue-600 rounded-lg p-2 aspect-video">
+                <Image
+                  src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyq7M2nnccX3ncYTE2dJVXLq8DSBIN1ZWgwtlGx"
+                  alt="Project Team"
+                  width={600}
+                  height={400}
+                  className="rounded-lg w-full h-full object-cover"
                   priority
                 />
               </div>
