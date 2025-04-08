@@ -123,7 +123,7 @@ export default function Sponsors() {
                   Contact Us
                 </a>
                 <a 
-                  href="/sponsorship-handbook.pdf"
+                  href="/corp.pdf"
                   className="text-gray-600 hover:text-gray-800 transition-colors text-sm"
                   target="_blank"
                   rel="noopener noreferrer"
