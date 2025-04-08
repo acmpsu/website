@@ -49,19 +49,17 @@ export default function ACMAI() {
               <>
                 <div className="flex flex-col items-center text-center">
                   <div className="flex mx-auto items-center gap-4 md:gap-6 mb-4">
-                    <Image 
-                      src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqTKHuh8ZDZOuQygeR7cSIx1Y5KLlJtwpijf6F"
-                      alt="AI Logo"
-                      width={40}
+                    <object
+                      data="/ai-icon.svg"
+                      type="image/svg+xml"
+                      width={50}
                       height={60}
-                      className="w-[40px] md:w-[80px] h-auto"
+                      className="w-[50px] md:w-[90px] h-auto"
                     />
-                    <Image 
-                      src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqMTlTSZoA2H6tNowsWISfXK8y04Yckh7jUlFP"
-                      alt="AI Words"
-                      width={200}
-                      height={60}
-                      className="w-[100px] md:w-[230px] h-auto"
+                    <object
+                      data="/acm.ai.svg"
+                      type="image/svg+xml"
+                      className="w-[250px] h-auto"
                     />
                   </div>
                   <p className="text-base font-geistSans md:text-lg text-gray-700 max-w-2xl mb-4 md:mb-8 px-4">
@@ -130,10 +128,10 @@ export default function ACMAI() {
               />
             </div>
             <h3 className="text-2xl font-poppins font-medium mb-2">
-              Dylan McDonnell
+              Julian Gavino
             </h3>
             <p className="text-blue-600 font-geistSans mb-4">
-              Explore Director
+              AI Director
             </p>
           </div>
           {/* Captains Grid */}
@@ -151,7 +149,7 @@ export default function ACMAI() {
                   />
                 </div>
                 <Image
-                  src="/headshots/wyattpetula.jpg"
+                  src="/headshots/placeholder.png"
                   alt="Explore Captain"
                   width={150}
                   height={150}
@@ -201,10 +199,14 @@ export default function ACMAI() {
           <div className="md:w-1/2">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="aspect-video bg-gray-200">
-                {/* Replace with actual image */}
-                <div className="w-full h-full flex items-center justify-center border-2 border-blue-600 rounded-lg p-2 aspect-video">
-                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqIwqZByzJURCnyWS7Qjbm6sMoLBa5lgkc3Izv" alt="Workshop" width={600} height={400} className="rounded-lg w-full h-full object-cover" priority />
-                </div>
+                <Image 
+                  src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqIwqZByzJURCnyWS7Qjbm6sMoLBa5lgkc3Izv" 
+                  alt="Workshop" 
+                  width={1400}
+                  height={720}
+                  className="mx-auto rounded-2xl object-cover w-full h-[200px] sm:h-[350px] md:h-[400px] lg:h-[500px]"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -227,10 +229,15 @@ export default function ACMAI() {
           </div>
           <div className="md:w-1/2">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="aspect-video bg-gray-200">
-                <div className="w-full h-full flex items-center justify-center border-2 border-blue-600 rounded-lg p-2 aspect-video">
-                  <Image src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqirWUGeXI03Y1wSV4TmZnWqFLHcgvzhklEB5K" alt="Workshop" width={600} height={400} className="rounded-lg w-full h-full object-cover" priority />
-                </div>
+              <div className="w-full h-full flex items-center justify-center border-2 border-blue-600 rounded-lg p-2 aspect-video">
+                <Image
+                  src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqirWUGeXI03Y1wSV4TmZnWqFLHcgvzhklEB5K"
+                  alt="Project Team"
+                  width={600}
+                  height={400}
+                  className="rounded-lg w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
