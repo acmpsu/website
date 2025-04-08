@@ -18,14 +18,16 @@ export default function Join() {
       <div className="relative w-full h-[300px]">
         <div className="absolute inset-0 flex flex-col justify-center items-center text-black">
           <div className="flex items-center gap-4 mb-4">
-            <Image 
-              src="/acm-logo.svg"
-              alt="ACM Logo"
-              width={100}
-              height={100}
-              className="object-contain"
-            />
-            <span className="text-6xl">Join ACM</span>
+            <div className="flex flex-col items-center justify-center mt-12">
+              <Image 
+                src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqbHSGKW884S57TOCYvamZlLntqfxXHNU2dPcM"
+                alt="ACM Logo"
+                width={100}
+                height={100}
+                className="object-contain"
+              />
+            <div className="text-6xl">Join ACM</div>
+            </div>
           </div>
           <p className="text-lg text-center max-w-2xl px-4">
             Be part of Penn State's largest computer science organization
