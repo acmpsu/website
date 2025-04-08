@@ -85,11 +85,13 @@ export default function ACMAI() {
       {/* What We Do Section */}
       <div className="w-full">
         <div className="max-w-3xl mx-auto text-center pt-20 pb-20 space-y-16"> 
-          <h2 className="text-5xl text-black flex items-center justify-center gap-4 font-geistSans font-medium mb-4">
-            What is
-            <object
-              data="/acm.ai.svg"
-              type="image/svg+xml"
+          <h2 className="text-5xl text-black flex flex-col items-center justify-center gap-4 font-geistSans font-medium mb-4 md:flex-row">
+            <span>What is</span>
+            <Image
+              src="/acm.ai.svg"
+              alt="AI Logo"
+              width={170}
+              height={60}
               className="w-[170px] h-auto"
             />
           </h2>

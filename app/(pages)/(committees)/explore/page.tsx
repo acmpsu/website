@@ -66,14 +66,14 @@ export default function ACMExplore() {
       {/* What We Do Section */}
       <div className="w-full">
         <div className="max-w-3xl mx-auto text-center pt-20 pb-20 space-y-16">
-          <h2 className="text-5xl text-black flex items-center justify-center gap-4 font-geistSans font-medium mb-4">
-            What is
+          <h2 className="text-5xl text-black flex flex-col items-center justify-center gap-4 font-geistSans font-medium mb-4 md:flex-row">
+            <span>What is</span>
             <Image
               src="/acm.explore.svg"
               alt="Explore Words"
               width={300}
               height={100}
-              className="w-[300px] h-auto mt-3"
+              className="w-[300px] h-auto"
             />
           </h2>
           <p className="text-gray-700 ml-4 mr-4 font-geistSans text-lg leading-relaxed">
