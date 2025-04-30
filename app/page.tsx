@@ -78,7 +78,7 @@ export default function Home() {
                   </HoverBorderGradient>
                 </a>
 
-                <a href="/schedule">
+                <a href="/events">
                   <HoverBorderGradient
                     containerClassName="rounded-full"
                     as="button"
