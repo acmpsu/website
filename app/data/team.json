@@ -26,7 +26,7 @@
     },
     {
       "name": "Dylan McDonnell",
-      "role": "Explore Director",
+      "role": "Venture Director",
       "image": "/headshots/dylanmcdonnell.jpg",
       "links": {
         "github": "https://github.com/Blizzero",
@@ -115,8 +115,20 @@
   ],
   "captains": [
     {
+      "name": "Gitika Saini",
+      "role": "Design Captain",
+      "image": "/headshots/gitikasaini.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/gitika-saini/"
+      },
+      "quote": {
+        "text": "\"To speak or write (a passage) from another usually with credit acknowledgement\"",
+        "attribution": "— Merriam-Webster"
+      }
+    },
+    {
       "name": "Wyatt Petula",
-      "role": "Explore Captain",
+      "role": "Venture Captain",
       "image": "/headshots/wyattpetula.jpg",
       "links": {
         "linkedin": "https://www.linkedin.com/in/wyatt-petula/"
@@ -128,7 +140,7 @@
     },
     {
       "name": "Vivek Nayar",
-      "role": "Explore Captain",
+      "role": "Venture Captain",
       "image": "/headshots/viveknayar.jpg",
       "links": {
         "linkedin": "https://www.linkedin.com/in/vivek-nayar-619808234/"
@@ -136,18 +148,6 @@
       "quote": {
         "text": "\"I, for one, welcome our new robot overlords\"",
         "attribution": "— Kent Brockman (The Simpsons)"
-      }
-    },
-    {
-      "name": "Gitika Saini",
-      "role": "Explore Captain",
-      "image": "/headshots/gitikasaini.jpg",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/gitika-saini/"
-      },
-      "quote": {
-        "text": "\"To speak or write (a passage) from another usually with credit acknowledgement\"",
-        "attribution": "— Merriam-Webster"
       }
     },
     {
@@ -168,18 +168,6 @@
       "image": "/headshots/placeholder.png",
       "links": {
         "linkedin": "https://linkedin.com/in/johndoe"
-      },
-      "quote": {
-        "text": "",
-        "attribution": ""
-      }
-    },
-    {
-      "name": "Adim Ogbolu",
-      "role": "Corporate Relations Captain",
-      "image": "/headshots/placeholder.png",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/adim-ogbolu-10873a31b/"
       },
       "quote": {
         "text": "",
