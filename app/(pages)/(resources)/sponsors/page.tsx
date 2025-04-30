@@ -19,7 +19,7 @@ export default function Sponsors() {
   return (
     <div>
       <Navigation />
-      <PageHeader 
+      <PageHeader
         title="Sponsors"
         description="Our sponsors play a vital role in helping us grow as a student-led tech community. Their support enables us to host events, run workshops, and create opportunities for students to learn, build, and connect."
       />
@@ -57,15 +57,6 @@ export default function Sponsors() {
         </h2>
         <div className=" max-w-6xl mx-auto flex justify-center w-full">
           <Accordion className="w-3/4" type="single" collapsible>
-            <AccordionItem value="item-1" className="bg-white rounded-t-lg">
-              <AccordionTrigger className="rounded-t-lg pl-4 pr-4 bg-[#193668]">
-                How many members are in the club?
-              </AccordionTrigger>
-              <AccordionContent className="pl-4 pr-4 text-white bg-[#193668]">
-                Currently, we have over 300 members.
-              </AccordionContent>
-            </AccordionItem>
-
             <AccordionItem value="item-2" className="bg-white">
               <AccordionTrigger className="pl-4 pr-4 bg-[#193668]">
                 How can sponsors connect with ACM members?
@@ -107,11 +98,11 @@ export default function Sponsors() {
                 What makes ACM different from other student organizations?
               </AccordionTrigger>
               <AccordionContent className="pl-4 pr-4 text-white bg-[#193668]">
-                ACM is the world's largest computing society, and our chapter is
-                one of the most active technical organizations at Penn State. We
-                focus on practical skills development, professional networking,
-                and creating meaningful connections between industry and
-                students.
+                ACM is the world's largest computing society, and our Penn State
+                chapter, founded in 1991, is one of the oldest and most active
+                technical organizations at Penn State. We focus on practical
+                skills development, professional networking, and creating
+                meaningful connections between industry and students.
               </AccordionContent>
             </AccordionItem>
 
