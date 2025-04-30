@@ -4,6 +4,7 @@ import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
 import clubPartnersData from "@/app/data/clubs.json";
+import PageHeader from "@/app/components/PageHeader";
 
 const { clubPartners } = clubPartnersData;
 
@@ -11,23 +12,10 @@ export default function Friends() {
   return (
     <div>
       <Navigation />
-      <div className="relative w-full h-[300px]">
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-black">
-            <div className="flex flex-col items-center justify-center mt-12">
-              <Image 
-                src="https://aqe6lvxoos.ufs.sh/f/xPAt5BMGMRyqbHSGKW884S57TOCYvamZlLntqfxXHNU2dPcM"
-                alt="ACM Logo"
-                width={100}
-                height={100}
-                className="object-contain"
-              />
-            <div className="text-6xl">Sponsors</div>
-          </div>
-          <p className="text-lg text-center max-w-2xl px-4">
-            We collaborate with various clubs and organizations at Penn State to create a stronger tech community.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        title="Friends"
+        description="We collaborate with various clubs and organizations at Penn State to create a stronger tech community."
+      />
       
       <div className="max-w-6xl mx-auto text-center px-4 py-5">
         <p className="text-md text-gray-600 mt-2 mb-10">
@@ -57,14 +45,14 @@ export default function Friends() {
       </div>
 
       <div className="text-center mt-20 mb-20">
-        <h2 className="text-6xl mb-12">Partner With Us</h2>
+        <h2 className="text-6xl mb-12">Interested?</h2>
         <div className="flex justify-center mt-8 items-center">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
             <a 
-              href="mailto:corporaterelations@acmpsu.org"
+              href="mailto:president@acmpsu.org"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg transition-colors"
             >
-              Partner With Us
+              Let's Collab!
             </a>
           </div>
         </div>
