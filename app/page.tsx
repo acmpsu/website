@@ -192,16 +192,16 @@ export default function Home() {
             {/* Stats Grid */}
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               <AnimatedStat
-                end={300}
+                end={100}
                 suffix="+"
-                title="Active Members"
+                title="Members"
                 subtitle="and growing each semester"
               />
               <AnimatedStat
-                end={50}
+                end={25}
                 suffix="+"
                 title="Annual Events"
-                subtitle="from presentations, workshops & hackathons"
+                subtitle="from GBMs, presentations & workshops"
               />
               <AnimatedStat
                 end={100}
