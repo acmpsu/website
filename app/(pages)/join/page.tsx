@@ -166,8 +166,20 @@ export default function Join() {
                 </AccordionContent>
               </AccordionItem>
 
+              <AccordionItem value="item-4" className="bg-white">
+                <AccordionTrigger className="pl-4 pr-4 bg-[#193668]">
+                  How can I stay involved?
+                </AccordionTrigger>
+                <AccordionContent className="pl-4 pr-4 text-white bg-[#193668]">
+                  To stay involved, attend our weekly meetings and participate
+                  in our workshops. We're often looking for more help, so you
+                  can also consider joining a committee to get involved in the
+                  production of workshops!
+                </AccordionContent>
+              </AccordionItem>
+
               <AccordionItem
-                value="item-4"
+                value="item-5"
                 className="bg-white rounded-b-lg [&[data-state=open]]:rounded-b-none"
               >
                 <AccordionTrigger className="pl-4 pr-4 bg-[#193668] rounded-b-lg [&[data-state=open]]:rounded-b-none">
@@ -176,21 +188,6 @@ export default function Join() {
                 <AccordionContent className="pl-4 pr-4 text-white bg-[#193668] rounded-b-lg">
                   Absolutely! We encourage freshmen to join early to make the
                   most of networking and learning opportunities.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem
-                value="item-4"
-                className="bg-white rounded-b-lg [&[data-state=open]]:rounded-b-none"
-              >
-                <AccordionTrigger className="pl-4 pr-4 bg-[#193668] rounded-b-lg [&[data-state=open]]:rounded-b-none">
-                  How can I stay involved?
-                </AccordionTrigger>
-                <AccordionContent className="pl-4 pr-4 text-white bg-[#193668] rounded-b-lg">
-                  To stay involved, attend our weekly meetings and participate
-                  in our workshops. We're often looking for more help, so you
-                  can also consider joining a committee to get involved in the
-                  production of workshops!
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
