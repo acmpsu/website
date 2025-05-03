@@ -16,22 +16,22 @@ export default function Friends() {
         title="Friends"
         description="We collaborate with various clubs and organizations at Penn State to create a stronger tech community."
       />
-      
+
       <div className="max-w-6xl mx-auto text-center px-4 py-5">
         <p className="text-md text-gray-600 mt-2 mb-10">
-          Here are some of our partner clubs we work with.
+          These are some of the clubs we work alongside:
         </p>
         <div className="mb-10">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 items-center justify-items-center">
             {clubPartners.map((partner) => (
-              <a 
+              <a
                 key={partner.name}
                 href={partner.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity"
               >
-                <Image 
+                <Image
                   src={partner.logoPath}
                   alt={partner.name}
                   width={150}
@@ -48,7 +48,7 @@ export default function Friends() {
         <h2 className="text-6xl mb-12">Interested?</h2>
         <div className="flex justify-center mt-8 items-center">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
-            <a 
+            <a
               href="mailto:president@acmpsu.org"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg transition-colors"
             >
@@ -61,4 +61,3 @@ export default function Friends() {
     </div>
   );
 }
-
