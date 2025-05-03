@@ -32,17 +32,7 @@ export default function Contact() {
     {
       title: "President",
       email: "president@acm.psu.edu",
-      blurb: "Contact for general inquiries about ACM and major organizational decisions."
-    },
-    {
-      title: "Vice President",
-      email: "vicepresident@acm.psu.edu",
-      blurb: "Contact for operational matters, event organization, and member engagement."
-    },
-    {
-      title: "Secretary",
-      email: "secretary@acm.psu.edu",
-      blurb: "Contact for meeting minutes, records, and administrative questions."
+      blurb: "Contact for general inquiries about ACM."
     },
     {
       title: "Treasurer",
