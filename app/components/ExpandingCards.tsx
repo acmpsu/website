@@ -34,8 +34,10 @@ const Card = ({
   onLeave 
 }: CardProps) => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
     setIsMobile(window.innerWidth < 768);
     
     const handleResize = () => {
@@ -52,7 +54,7 @@ const Card = ({
         isHovered ? 'flex-[2]' : 'flex-1'
       } min-w-[300px]`}
       animate={{
-        height: isMobile ? 'auto' : '500px',
+        height: isMounted && isMobile ? 'auto' : '500px',
       }}
       onMouseEnter={onHover}
       onMouseLeave={onLeave}

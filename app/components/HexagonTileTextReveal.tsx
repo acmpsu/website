@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 
 interface HexagonPatternProps {
@@ -15,6 +17,7 @@ export default function HexagonPattern({
   gap = 2,
   className = ""
 }: HexagonPatternProps) {
+  const [isMounted, setIsMounted] = useState(false);
   const [activeHexagons, setActiveHexagons] = useState<Set<string>>(new Set());
   const [hexagonColors, setHexagonColors] = useState<Record<string, string>>({});
 
@@ -22,93 +25,117 @@ export default function HexagonPattern({
   const colors = ['#1e3a8a', '#2563eb', '#3b82f6', '#60a5fa'];
 
   useEffect(() => {
-    // Get all possible positions
-    const allPositions = [];
-    for (let row = 0; row < rows; row++) {
-      for (let col = 0; col < cols; col++) {
-        allPositions.push(`${row}-${col}`);
+    setIsMounted(true);
+    
+    let hexagonInterval: NodeJS.Timeout;
+    
+    // Small delay to ensure client-side only rendering
+    const timer = setTimeout(() => {
+      // Get all possible positions
+      const allPositions = [];
+      for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+          allPositions.push(`${row}-${col}`);
+        }
       }
-    }
-    
-    // Shuffle positions
-    for (let i = allPositions.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [allPositions[i], allPositions[j]] = [allPositions[j], allPositions[i]];
-    }
+      
+      // Shuffle positions
+      for (let i = allPositions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [allPositions[i], allPositions[j]] = [allPositions[j], allPositions[i]];
+      }
 
-    // Take exactly 75% of positions
-    const totalHexagons = rows * cols;
-    const targetVisible = Math.floor(totalHexagons * 0.75);
-    const visiblePositions = allPositions.slice(0, targetVisible);
+      // Take exactly 75% of positions
+      const totalHexagons = rows * cols;
+      const targetVisible = Math.floor(totalHexagons * 0.75);
+      const visiblePositions = allPositions.slice(0, targetVisible);
 
-    // Initialize with exactly 75% visible
-    const initialActive = new Set<string>();
-    const initialColors: Record<string, string> = {};
-    
-    visiblePositions.forEach(key => {
-      initialActive.add(key);
-      initialColors[key] = colors[Math.floor(Math.random() * colors.length)];
-    });
+      // Initialize with exactly 75% visible
+      const initialActive = new Set<string>();
+      const initialColors: Record<string, string> = {};
+      
+      visiblePositions.forEach(key => {
+        initialActive.add(key);
+        initialColors[key] = colors[Math.floor(Math.random() * colors.length)];
+      });
 
-    setActiveHexagons(initialActive);
-    setHexagonColors(initialColors);
+      setActiveHexagons(initialActive);
+      setHexagonColors(initialColors);
 
-    // Hexagon animation interval
-    const hexagonInterval = setInterval(() => {
-      setActiveHexagons(prevActive => {
-        const newActive = new Set(prevActive);
-        const totalHexagons = rows * cols;
-        const targetVisible = Math.floor(totalHexagons * 0.75);
-        
-        // Get all possible positions
-        const allPositions = [];
-        for (let row = 0; row < rows; row++) {
-          for (let col = 0; col < cols; col++) {
-            allPositions.push(`${row}-${col}`);
+      // Hexagon animation interval
+      hexagonInterval = setInterval(() => {
+        setActiveHexagons(prevActive => {
+          const newActive = new Set(prevActive);
+          const totalHexagons = rows * cols;
+          const targetVisible = Math.floor(totalHexagons * 0.75);
+          
+          // Get all possible positions
+          const allPositions = [];
+          for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+              allPositions.push(`${row}-${col}`);
+            }
           }
-        }
-        
-        // Shuffle positions
-        for (let i = allPositions.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [allPositions[i], allPositions[j]] = [allPositions[j], allPositions[i]];
-        }
-        
-        // Take first few positions to update
-        const positionsToUpdate = allPositions.slice(0, 5);
-        
-        for (const key of positionsToUpdate) {
-          if (newActive.size > targetVisible) {
-            newActive.delete(key);
-          } else if (newActive.size < targetVisible) {
-            newActive.add(key);
-            setHexagonColors(prev => ({
-              ...prev,
-              [key]: colors[Math.floor(Math.random() * colors.length)]
-            }));
-          } else {
-            if (Math.random() < 0.5) {
-              if (newActive.has(key)) {
-                newActive.delete(key);
-              } else {
-                newActive.add(key);
-                setHexagonColors(prev => ({
-                  ...prev,
-                  [key]: colors[Math.floor(Math.random() * colors.length)]
-                }));
+          
+          // Shuffle positions
+          for (let i = allPositions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [allPositions[i], allPositions[j]] = [allPositions[j], allPositions[i]];
+          }
+          
+          // Take first few positions to update
+          const positionsToUpdate = allPositions.slice(0, 5);
+          
+          for (const key of positionsToUpdate) {
+            if (newActive.size > targetVisible) {
+              newActive.delete(key);
+            } else if (newActive.size < targetVisible) {
+              newActive.add(key);
+              setHexagonColors(prev => ({
+                ...prev,
+                [key]: colors[Math.floor(Math.random() * colors.length)]
+              }));
+            } else {
+              if (Math.random() < 0.5) {
+                if (newActive.has(key)) {
+                  newActive.delete(key);
+                } else {
+                  newActive.add(key);
+                  setHexagonColors(prev => ({
+                    ...prev,
+                    [key]: colors[Math.floor(Math.random() * colors.length)]
+                  }));
+                }
               }
             }
           }
-        }
-        return newActive;
-      });
-    }, 2000); // Slower interval
+          return newActive;
+        });
+      }, 2000); // Slower interval
+    }, 0);
 
-    return () => clearInterval(hexagonInterval);
-  }, []);
+    return () => {
+      clearTimeout(timer);
+      if (hexagonInterval) clearInterval(hexagonInterval);
+    };
+  }, [rows, cols]);
 
   const horizontalSpacing = hexSize + gap
   const verticalSpacing = hexSize * 0.866 + gap
+
+  // Don't render on server, only on client after mount
+  if (!isMounted) {
+    return (
+      <div 
+        className={`relative ${className}`}
+        style={{
+          width: cols * horizontalSpacing,
+          height: rows * verticalSpacing,
+          overflow: 'visible'
+        }}
+      />
+    );
+  }
 
   return (
     <div 
